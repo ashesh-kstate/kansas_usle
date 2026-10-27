@@ -1,0 +1,290 @@
+{
+ "source": "USLE_Urban_KS08.xlsm (S. J. Thien and M. Buckley, Kansas State University), sheets Cfactor (C99:N112) and Cover (B100:D123)",
+ "about": "Both growing plants and gound cover affect erosion control. The C factor compares erosion from sites with different covers to that of a bare site. Thus, management decisions about soil disturbance and ground cover determine the value of C. Undisturbed grassland and forests have very little erosion and the lowest C values, typically below 0.2. Soils with no plants or ground cover are most susceptible to erosion and have the highest possible cover factor (1.0). Disturbance beyond removing plant cover will increase erosion potential.",
+ "theory": "Of all the factors in the USLE, managers have the most control over C, the ground cover mangement factor. Studies have compared the erosion from bare soil to that from similar plots with various combinations of protectve ground cover and soil disturbance in order to determine the erosive influence. Your selection of a ground cover will lower the C factor from its unadjusted value of 1.00. As the amount of cover on the soil increases, the C factor decreases. Ground cover protects the soil from erosive forces. Soil management activities that disrupt the soil surface increase the potential for soil loss and therefore, increase the C factor. When large equipment is used for excavation and land shaping during the construction of homes, golf courses, etc. soil is greatly disrupted. When installing new landscaping, it is best to keep surface disruption to a minimum.",
+ "equation": "C = Cbase(ground cover, % cover) * disturbance",
+ "coverPct": [
+  0,
+  10,
+  20,
+  30,
+  40,
+  50,
+  60,
+  70,
+  80,
+  90
+ ],
+ "covers": [
+  {
+   "id": 1,
+   "label": "Crushed Rock",
+   "excelRow": 101,
+   "values": [
+    0.25,
+    0.23,
+    0.21,
+    0.19,
+    0.18,
+    0.17,
+    0.15,
+    0.13,
+    0.11,
+    0.1
+   ]
+  },
+  {
+   "id": 2,
+   "label": "Sod",
+   "excelRow": 102,
+   "values": [
+    0.25,
+    0.23,
+    0.21,
+    0.19,
+    0.18,
+    0.17,
+    0.15,
+    0.13,
+    0.11,
+    0.1
+   ]
+  },
+  {
+   "id": 3,
+   "label": "Seed and Mulch",
+   "excelRow": 103,
+   "values": [
+    0.55,
+    0.5,
+    0.45,
+    0.4,
+    0.37,
+    0.34,
+    0.31,
+    0.28,
+    0.25,
+    0.22
+   ]
+  },
+  {
+   "id": 4,
+   "label": "Seed",
+   "excelRow": 104,
+   "values": [
+    0.85,
+    0.75,
+    0.65,
+    0.55,
+    0.5,
+    0.45,
+    0.4,
+    0.35,
+    0.3,
+    0.28
+   ]
+  },
+  {
+   "id": 5,
+   "label": "Landscaping and Mulch",
+   "excelRow": 105,
+   "values": [
+    0.3,
+    0.28,
+    0.26,
+    0.24,
+    0.22,
+    0.2,
+    0.18,
+    0.16,
+    0.14,
+    0.12
+   ]
+  },
+  {
+   "id": 6,
+   "label": "Landscaping",
+   "excelRow": 106,
+   "values": [
+    0.5,
+    0.44,
+    0.38,
+    0.34,
+    0.28,
+    0.25,
+    0.22,
+    0.2,
+    0.18,
+    0.16
+   ]
+  },
+  {
+   "id": 7,
+   "label": "Bare Surface",
+   "excelRow": 107,
+   "values": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "coverIndependent": true
+  },
+  {
+   "id": 8,
+   "label": "Cover Crop",
+   "excelRow": 108,
+   "values": [
+    0.25,
+    0.23,
+    0.21,
+    0.19,
+    0.18,
+    0.17,
+    0.15,
+    0.13,
+    0.11,
+    0.1
+   ]
+  },
+  {
+   "id": 9,
+   "label": "Grassland",
+   "excelRow": 109,
+   "values": [
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1
+   ],
+   "coverIndependent": true
+  },
+  {
+   "id": 10,
+   "label": "Woodland",
+   "excelRow": 110,
+   "values": [
+    0.25,
+    0.23,
+    0.21,
+    0.19,
+    0.17,
+    0.15,
+    0.14,
+    0.13,
+    0.14,
+    0.11
+   ]
+  },
+  {
+   "id": 11,
+   "label": "High Density Housing",
+   "excelRow": 111,
+   "values": [
+    0.6,
+    0.55,
+    0.5,
+    0.45,
+    0.43,
+    0.4,
+    0.38,
+    0.36,
+    0.34,
+    0.32
+   ]
+  },
+  {
+   "id": 12,
+   "label": "Pavement",
+   "excelRow": 112,
+   "values": [
+    0.6,
+    0.6,
+    0.6,
+    0.6,
+    0.6,
+    0.6,
+    0.6,
+    0.6,
+    0.6,
+    0.6
+   ],
+   "coverIndependent": true
+  }
+ ],
+ "disturbance": [
+  {
+   "id": 0,
+   "label": "None",
+   "detail": "established site, no equipment on it",
+   "factor": 1.0,
+   "addedInWebVersion": true
+  },
+  {
+   "id": 1,
+   "label": "Excavation",
+   "detail": "digging into earth with large equipment",
+   "factor": 1.8
+  },
+  {
+   "id": 2,
+   "label": "Land Shaping",
+   "detail": "moving earth with large equipment",
+   "factor": 1.6
+  },
+  {
+   "id": 3,
+   "label": "Soil Compacting",
+   "detail": "compacting earth with large equipment",
+   "factor": 1.0
+  },
+  {
+   "id": 4,
+   "label": "Tractor Seeding",
+   "detail": "surface application with medium sized equipment",
+   "factor": 1.1
+  },
+  {
+   "id": 5,
+   "label": "Light Traffic",
+   "detail": "small vehicles such as trucks or gators",
+   "factor": 1.1
+  },
+  {
+   "id": 6,
+   "label": "Landscaping",
+   "detail": "foot traffic and handtools only",
+   "factor": 1.3
+  }
+ ],
+ "notes": [
+  "Ground-cover C values and disturbance multipliers are the workbook's (Cfactor!C99:N112 and Cover!B118:D123). The workbook's lookup lines up with its dropdown for all 12 covers.",
+  "\"None\" is added in the web version (\u00d71.0) for established sites with no equipment on them. The workbook's lowest multiplier is soil compacting (\u00d71.0), so it gives the same C; it just reads more plainly.",
+  "Woodland C rises from 0.13 at 70% cover to 0.14 at 80%, then falls to 0.11 at 90%. This looks like a typo; the workbook value is kept.",
+  "Crushed rock, sod and cover crop share identical C values. Grassland (0.1), bare surface (1.0) and pavement (0.6) do not change with cover, so the cover slider is turned off for them.",
+  "The C Hints sheet says C falls as you move down the disturbance list (except compaction), but landscaping by hand (\u00d71.3) is higher than tractor seeding and light traffic (\u00d71.1)."
+ ],
+ "siteDefaults": {
+  "R": 185,
+  "soilId": 114,
+  "lengthFt": 400,
+  "slopePct": 2
+ },
+ "defaults": {
+  "cover": 5,
+  "coverPct": 50,
+  "disturbance": 2
+ }
+}

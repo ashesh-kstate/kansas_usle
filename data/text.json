@@ -1,0 +1,41 @@
+{
+ "source": "USLE_Agriculture_KS08.xlsm (S. J. Thien, Kansas State University), sheets Intro, Equation, C Hints, P Hints, Theory",
+ "intro": "The Universal Soil Loss Equation predicts soil loss from sheet and rill types of water erosion based on site characteristics and management inputs. The USLE predicts if erosion will exceed a \"tolerable\" rate. Conservation hints and explanations of equation factors help users understand soil erosion processes and their control. The USLE can alert soil managers to potential erosion hazards, identify factors responsible for excessive erosion, and aid in selecting of appropriate conservation practices. Each factor affecting erosion can be changed individually to illustrate its impact. This USLE version is applicable for Kansas. Note: Factors other than those considered in this equation can affect actual erosion loss.",
+ "tFactor": "Though preferred, zero tolerance for erosion is probably not practical, so soil-loss tolerance limits, known as T values, have been assigned to soils. USDA and other soil scientists have developed T values from years of experience and some research on how soil productivity is degraded by erosion. T values commonly range from 2-5 tons of soil loss per acre per year. When soil quality is sensitive to small erosion losses, low T values have been assigned. For deep soils with favorable rooting zones, 5 tons/acre is the maximum T value assigned. Use of a tolerable erosion concept in the USLE should not suggest that soil productivity is reduced only when erosion exceeds the tolerable level. Any soil loss can lead to a change in soil quality. Data from 1992 point out that about one-third of all cropland in the United States is eroding at rates in excess of T. Attention to soil conservation remains essential in preserving soil quality.",
+ "cHints": [
+  "No. 1 suggestion:  Increase the amount of residue cover.",
+  "Change the crop sequence.  C values decrease as you move down this list:",
+  "Change the tillage.  C values decrease as you move down this list.",
+  "Manage for high yields.  C values decrease as yields increase.",
+  "Minimize the interval between tillage and planting dates."
+ ],
+ "cCropOrder": [
+  "Bare (no crop)",
+  "Soybean, continuous",
+  "Soybean or sunflower, after small grains",
+  "Canola, cotton, vegetables, beets",
+  "Corn or sorghum, continuous",
+  "Corn or sorghum, after small grains or row crops",
+  "Sorghum or forage, drilled after small grains or row crops",
+  "Small grains, continuous",
+  "Small grains, after fallow",
+  "Small grains, after row crops",
+  "Alfalfa, legumes, woodland, grassland"
+ ],
+ "cTillageOrder": [
+  "Fall plowed",
+  "Spring plowed",
+  "Most tillage other than those listed",
+  "Ridge-till on the contour",
+  "No-till, narrow slot planter"
+ ],
+ "pHints": [
+  "Use contour planting: plant rows around the slope and not up and down the slope.",
+  "Use strip cropping:  bands of grass/legume between contour planted row crops.",
+  "Use terraces.",
+  "Utilize grass waterways and buffer strips.",
+  "Closed terraces have a lower P factor than open terraces.",
+  "Minimize distances between terraces to slow water flow."
+ ],
+ "credit": "S. J. Thien, Kansas State University (sjthien@ksu.edu)"
+}

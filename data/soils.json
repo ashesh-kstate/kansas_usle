@@ -1,0 +1,2927 @@
+{
+ "source": "USLE_Agriculture_KS08.xlsm (S. J. Thien, Kansas State University), sheet Kfactor, range A81:D405",
+ "about": "The soil erodibility factor, K, indicates the inherent susceptibility of a soil to erode. Two soil properties, infiltration capacity and structural stability, exert the greatest influence on erosion. These features, in turn, are related to a soil's organic matter and clay content, clay type, depth to an impervious layer, and tendency to crust. Selecting one of the 324 soils in Kansas. assigns both a K factor and a T value. Soils that readily resist erosion have K values less than 0.2, while values greater than 0.3 indicate high erodibility.",
+ "units": {
+  "K": "ton\u00b7acre\u00b7h / (hundreds of acre\u00b7ft\u00b7tonf\u00b7in)",
+  "T": "tons/acre/year"
+ },
+ "defaultId": 10,
+ "soils": [
+  {
+   "id": 1,
+   "name": "ALBATON, SiC",
+   "series": "Albaton",
+   "texture": "SiC",
+   "textureName": "silty clay",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 2,
+   "name": "ALBION, SL",
+   "series": "Albion",
+   "texture": "SL",
+   "textureName": "sandy loam",
+   "K": 0.2,
+   "T": 3.0
+  },
+  {
+   "id": 3,
+   "name": "ANGELUS, SiL",
+   "series": "Angelus",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.37,
+   "T": 5.0
+  },
+  {
+   "id": 4,
+   "name": "ANSELMO, FSL",
+   "series": "Anselmo",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.2,
+   "T": 5.0
+  },
+  {
+   "id": 5,
+   "name": "APPERSON, SiCL",
+   "series": "Apperson",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 3.0
+  },
+  {
+   "id": 6,
+   "name": "ARMO, L",
+   "series": "Armo",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 7,
+   "name": "ARMSTER, L",
+   "series": "Armster",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.37,
+   "T": 5.0
+  },
+  {
+   "id": 8,
+   "name": "ATTICA, FSL",
+   "series": "Attica",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.24,
+   "T": 5.0
+  },
+  {
+   "id": 9,
+   "name": "BANKARD, LS",
+   "series": "Bankard",
+   "texture": "LS",
+   "textureName": "loamy sand",
+   "K": 0.17,
+   "T": 5.0
+  },
+  {
+   "id": 10,
+   "name": "BASEHOR, L",
+   "series": "Basehor",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.32,
+   "T": 2.0
+  },
+  {
+   "id": 11,
+   "name": "BASEHOR, stony L",
+   "series": "Basehor",
+   "texture": "stony L",
+   "textureName": "loam",
+   "K": 0.2,
+   "T": 2.0
+  },
+  {
+   "id": 12,
+   "name": "BATES, L",
+   "series": "Bates",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.28,
+   "T": 4.0
+  },
+  {
+   "id": 13,
+   "name": "BATES, FSL",
+   "series": "Bates",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.2,
+   "T": 4.0
+  },
+  {
+   "id": 14,
+   "name": "BAYARD, FSL",
+   "series": "Bayard",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.2,
+   "T": 5.0
+  },
+  {
+   "id": 15,
+   "name": "BENFIELD, SiCL",
+   "series": "Benfield",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 3.0
+  },
+  {
+   "id": 16,
+   "name": "BETHANY, SiL",
+   "series": "Bethany",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.37,
+   "T": 4.0
+  },
+  {
+   "id": 17,
+   "name": "BIPPUS, CL",
+   "series": "Bippus",
+   "texture": "CL",
+   "textureName": "clay loam",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 18,
+   "name": "BLANKET, SiL",
+   "series": "Blanket",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 19,
+   "name": "BOEL, FSL",
+   "series": "Boel",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.2,
+   "T": 5.0
+  },
+  {
+   "id": 20,
+   "name": "BOGUE, C",
+   "series": "Bogue",
+   "texture": "C",
+   "textureName": "clay",
+   "K": 0.28,
+   "T": 3.0
+  },
+  {
+   "id": 21,
+   "name": "BOLIVAR, FSL",
+   "series": "Bolivar",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.24,
+   "T": 4.0
+  },
+  {
+   "id": 22,
+   "name": "BOWDOIN, C",
+   "series": "Bowdoin",
+   "texture": "C",
+   "textureName": "clay",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 23,
+   "name": "BOWDOIN, CL",
+   "series": "Bowdoin",
+   "texture": "CL",
+   "textureName": "clay loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 24,
+   "name": "BOWDOIN, LFS",
+   "series": "Bowdoin",
+   "texture": "LFS",
+   "textureName": "loamy fine sand",
+   "K": 0.17,
+   "T": 5.0
+  },
+  {
+   "id": 25,
+   "name": "BRAZOS, LFS",
+   "series": "Brazos",
+   "texture": "LFS",
+   "textureName": "loamy fine sand",
+   "K": 0.17,
+   "T": 5.0
+  },
+  {
+   "id": 26,
+   "name": "BREMER, SiCL",
+   "series": "Bremer",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 5.0
+  },
+  {
+   "id": 27,
+   "name": "BREWER, SiCL",
+   "series": "Brewer",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 5.0
+  },
+  {
+   "id": 28,
+   "name": "BRIDGEPORT, SiL",
+   "series": "Bridgeport",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 29,
+   "name": "BRIDGEPORT, FSL",
+   "series": "Bridgeport",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.2,
+   "T": 5.0
+  },
+  {
+   "id": 30,
+   "name": "BROWNELL, L",
+   "series": "Brownell",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.2,
+   "T": 3.0
+  },
+  {
+   "id": 31,
+   "name": "BURCHARD, CL",
+   "series": "Burchard",
+   "texture": "CL",
+   "textureName": "clay loam",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 32,
+   "name": "BUTLER, SiL",
+   "series": "Butler",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.37,
+   "T": 4.0
+  },
+  {
+   "id": 33,
+   "name": "CALCO, SiCL",
+   "series": "Calco",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 34,
+   "name": "CAMPUS, L",
+   "series": "Campus",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.28,
+   "T": 4.0
+  },
+  {
+   "id": 35,
+   "name": "CANADIAN, FSL",
+   "series": "Canadian",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.2,
+   "T": 5.0
+  },
+  {
+   "id": 36,
+   "name": "CANLON, L",
+   "series": "Canlon",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.32,
+   "T": 2.0
+  },
+  {
+   "id": 37,
+   "name": "CANYON, L",
+   "series": "Canyon",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.32,
+   "T": 2.0
+  },
+  {
+   "id": 38,
+   "name": "CAREY, SiCL",
+   "series": "Carey",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 39,
+   "name": "CARLSON, SiL",
+   "series": "Carlson",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 40,
+   "name": "CARR, FSL",
+   "series": "Carr",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.24,
+   "T": 5.0
+  },
+  {
+   "id": 41,
+   "name": "CARUSO, L",
+   "series": "Caruso",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 42,
+   "name": "CARWILE, FSL",
+   "series": "Carwile",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.24,
+   "T": 5.0
+  },
+  {
+   "id": 43,
+   "name": "CASE, CL",
+   "series": "Case",
+   "texture": "CL",
+   "textureName": "clay loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 44,
+   "name": "CASS, FSL",
+   "series": "Cass",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.2,
+   "T": 5.0
+  },
+  {
+   "id": 45,
+   "name": "CATOOSA, SiL",
+   "series": "Catoosa",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 3.0
+  },
+  {
+   "id": 46,
+   "name": "CHASE, SiCL",
+   "series": "Chase",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 5.0
+  },
+  {
+   "id": 47,
+   "name": "CHEROKEE, SiL",
+   "series": "Cherokee",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.43,
+   "T": 4.0
+  },
+  {
+   "id": 48,
+   "name": "CHURCH, SiCL",
+   "series": "Church",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.43,
+   "T": 5.0
+  },
+  {
+   "id": 49,
+   "name": "CLAIREMONT, SiL",
+   "series": "Clairemont",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.37,
+   "T": 5.0
+  },
+  {
+   "id": 50,
+   "name": "CLARESON, flaggy SiCL",
+   "series": "Clareson",
+   "texture": "flaggy SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.24,
+   "T": 2.0
+  },
+  {
+   "id": 51,
+   "name": "CLARESON, SiCL",
+   "series": "Clareson",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.32,
+   "T": 2.0
+  },
+  {
+   "id": 52,
+   "name": "CLARK, CL",
+   "series": "Clark",
+   "texture": "CL",
+   "textureName": "clay loam",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 53,
+   "name": "CLARK, FSL",
+   "series": "Clark",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.2,
+   "T": 5.0
+  },
+  {
+   "id": 54,
+   "name": "CLARKSVILLE, SiL",
+   "series": "Clarksville",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.24,
+   "T": 3.0
+  },
+  {
+   "id": 55,
+   "name": "CLEORA, FSL",
+   "series": "Cleora",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.2,
+   "T": 5.0
+  },
+  {
+   "id": 56,
+   "name": "CLIME, SiC",
+   "series": "Clime",
+   "texture": "SiC",
+   "textureName": "silty clay",
+   "K": 0.28,
+   "T": 3.0
+  },
+  {
+   "id": 57,
+   "name": "CLIME, SiCL",
+   "series": "Clime",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 3.0
+  },
+  {
+   "id": 58,
+   "name": "COLBY, SiL",
+   "series": "Colby",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.43,
+   "T": 5.0
+  },
+  {
+   "id": 59,
+   "name": "COLLINSVILLE, FSL",
+   "series": "Collinsville",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.2,
+   "T": 2.0
+  },
+  {
+   "id": 60,
+   "name": "COLO, SiL",
+   "series": "Colo",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.37,
+   "T": 5.0
+  },
+  {
+   "id": 61,
+   "name": "COLY, SiL",
+   "series": "Coly",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.43,
+   "T": 5.0
+  },
+  {
+   "id": 62,
+   "name": "CORBIN, SiL",
+   "series": "Corbin",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 63,
+   "name": "CORINTH, SiCL",
+   "series": "Corinth",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 4.0
+  },
+  {
+   "id": 64,
+   "name": "COZAD, SiL",
+   "series": "Cozad",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 65,
+   "name": "CRETE, SiL",
+   "series": "Crete",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.37,
+   "T": 4.0
+  },
+  {
+   "id": 66,
+   "name": "CRESFIELD, FSL",
+   "series": "Cresfield",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.2,
+   "T": 5.0
+  },
+  {
+   "id": 67,
+   "name": "CROFT, LFS",
+   "series": "Croft",
+   "texture": "LFS",
+   "textureName": "loamy fine sand",
+   "K": 0.17,
+   "T": 5.0
+  },
+  {
+   "id": 68,
+   "name": "DALE, SiL",
+   "series": "Dale",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 69,
+   "name": "DALHART, FSL",
+   "series": "Dalhart",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.24,
+   "T": 5.0
+  },
+  {
+   "id": 70,
+   "name": "DALHART, LFS",
+   "series": "Dalhart",
+   "texture": "LFS",
+   "textureName": "loamy fine sand",
+   "K": 0.17,
+   "T": 5.0
+  },
+  {
+   "id": 71,
+   "name": "DARNELL, FSL",
+   "series": "Darnell",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.24,
+   "T": 2.0
+  },
+  {
+   "id": 72,
+   "name": "DEEPWATER, SiL",
+   "series": "Deepwater",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 73,
+   "name": "DENNIS, SiL",
+   "series": "Dennis",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.37,
+   "T": 4.0
+  },
+  {
+   "id": 74,
+   "name": "DERBY, FS",
+   "series": "Derby",
+   "texture": "FS",
+   "textureName": "fine sand",
+   "K": 0.17,
+   "T": 5.0
+  },
+  {
+   "id": 75,
+   "name": "DETROIT, SiCL",
+   "series": "Detroit",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 5.0
+  },
+  {
+   "id": 76,
+   "name": "DILLWYN, LFS",
+   "series": "Dillwyn",
+   "texture": "LFS",
+   "textureName": "loamy fine sand",
+   "K": 0.17,
+   "T": 5.0
+  },
+  {
+   "id": 77,
+   "name": "DIX, SL",
+   "series": "Dix",
+   "texture": "SL",
+   "textureName": "sandy loam",
+   "K": 0.15,
+   "T": 2.0
+  },
+  {
+   "id": 78,
+   "name": "DORRANCE, SL",
+   "series": "Dorrance",
+   "texture": "SL",
+   "textureName": "sandy loam",
+   "K": 0.28,
+   "T": 3.0
+  },
+  {
+   "id": 79,
+   "name": "DORRANCE, gravelly SL",
+   "series": "Dorrance",
+   "texture": "gravelly SL",
+   "textureName": "sandy loam",
+   "K": 0.2,
+   "T": 3.0
+  },
+  {
+   "id": 80,
+   "name": "DRUMMOND, SiL",
+   "series": "Drummond",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.43,
+   "T": 3.0
+  },
+  {
+   "id": 81,
+   "name": "DWIGHT, SiL",
+   "series": "Dwight",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.43,
+   "T": 3.0
+  },
+  {
+   "id": 82,
+   "name": "DWYER, LFS",
+   "series": "Dwyer",
+   "texture": "LFS",
+   "textureName": "loamy fine sand",
+   "K": 0.17,
+   "T": 5.0
+  },
+  {
+   "id": 83,
+   "name": "EDALGO, SiL",
+   "series": "Edalgo",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.37,
+   "T": 3.0
+  },
+  {
+   "id": 84,
+   "name": "EDINA, SiL",
+   "series": "Edina",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.37,
+   "T": 4.0
+  },
+  {
+   "id": 85,
+   "name": "ELANDCO, SiL",
+   "series": "Elandco",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 86,
+   "name": "ELKADER, SiL",
+   "series": "Elkader",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 87,
+   "name": "ELMONT, SiL",
+   "series": "Elmont",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 88,
+   "name": "ELSMERE, LFS",
+   "series": "Elsmere",
+   "texture": "LFS",
+   "textureName": "loamy fine sand",
+   "K": 0.17,
+   "T": 5.0
+  },
+  {
+   "id": 89,
+   "name": "ELTREE, SiL",
+   "series": "Eltree",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 90,
+   "name": "ENGLUND, SiL",
+   "series": "Englund",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.37,
+   "T": 4.0
+  },
+  {
+   "id": 91,
+   "name": "ERAM, SiCL",
+   "series": "Eram",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 3.0
+  },
+  {
+   "id": 92,
+   "name": "EUDORA, SiL",
+   "series": "Eudora",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 93,
+   "name": "EUDORA, FSL",
+   "series": "Eudora",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.2,
+   "T": 5.0
+  },
+  {
+   "id": 94,
+   "name": "FARUM, L",
+   "series": "Farum",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 95,
+   "name": "FARUM, FSL",
+   "series": "Farum",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.2,
+   "T": 5.0
+  },
+  {
+   "id": 96,
+   "name": "FLORENCE, SiL",
+   "series": "Florence",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.24,
+   "T": 3.0
+  },
+  {
+   "id": 97,
+   "name": "GARA, L",
+   "series": "Gara",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 98,
+   "name": "GEARY, SiL",
+   "series": "Geary",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 99,
+   "name": "GERALD, SiL",
+   "series": "Gerald",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.43,
+   "T": 4.0
+  },
+  {
+   "id": 100,
+   "name": "GERLANE, FSL",
+   "series": "Gerlane",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.2,
+   "T": 5.0
+  },
+  {
+   "id": 101,
+   "name": "GIBBON, SiCL",
+   "series": "Gibbon",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 102,
+   "name": "GIRARD, SiCL",
+   "series": "Girard",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 3.0
+  },
+  {
+   "id": 103,
+   "name": "GLENBURG, SL",
+   "series": "Glenburg",
+   "texture": "SL",
+   "textureName": "sandy loam",
+   "K": 0.24,
+   "T": 5.0
+  },
+  {
+   "id": 104,
+   "name": "GOESSEL, SiC",
+   "series": "Goessel",
+   "texture": "SiC",
+   "textureName": "silty clay",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 105,
+   "name": "GOSHEN, SiL",
+   "series": "Goshen",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 106,
+   "name": "GOSPORT, SiL",
+   "series": "Gosport",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.43,
+   "T": 4.0
+  },
+  {
+   "id": 107,
+   "name": "GRANT, SiL",
+   "series": "Grant",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 108,
+   "name": "GRIGSTON, SiL",
+   "series": "Grigston",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 109,
+   "name": "GRUNDY, SiL",
+   "series": "Grundy",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.37,
+   "T": 4.0
+  },
+  {
+   "id": 110,
+   "name": "GYMER, SiL",
+   "series": "Gymer",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 111,
+   "name": "HAIG, SiCL",
+   "series": "Haig",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 4.0
+  },
+  {
+   "id": 112,
+   "name": "HALL, SiL",
+   "series": "Hall",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 113,
+   "name": "HAMBURG, SiL",
+   "series": "Hamburg",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.43,
+   "T": 5.0
+  },
+  {
+   "id": 114,
+   "name": "HARNEY, SiL",
+   "series": "Harney",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 115,
+   "name": "HASTINGS, SiL",
+   "series": "Hastings",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 116,
+   "name": "HAYNIE, SiL",
+   "series": "Haynie",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.37,
+   "T": 5.0
+  },
+  {
+   "id": 117,
+   "name": "HECTOR, FSL",
+   "series": "Hector",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.17,
+   "T": 2.0
+  },
+  {
+   "id": 118,
+   "name": "HEDVILLE, L",
+   "series": "Hedville",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.24,
+   "T": 2.0
+  },
+  {
+   "id": 119,
+   "name": "HEIZER, L",
+   "series": "Heizer",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.24,
+   "T": 2.0
+  },
+  {
+   "id": 120,
+   "name": "HEPLER, SiL",
+   "series": "Hepler",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.37,
+   "T": 5.0
+  },
+  {
+   "id": 121,
+   "name": "HOBBS, SiL",
+   "series": "Hobbs",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 122,
+   "name": "HOLDREGE, SiL",
+   "series": "Holdrege",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 123,
+   "name": "HOLDREGE, FSL",
+   "series": "Holdrege",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.2,
+   "T": 5.0
+  },
+  {
+   "id": 124,
+   "name": "HORD, SiL",
+   "series": "Hord",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 125,
+   "name": "HUMBARGER, L",
+   "series": "Humbarger",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 126,
+   "name": "INAVALE, LFS",
+   "series": "Inavale",
+   "texture": "LFS",
+   "textureName": "loamy fine sand",
+   "K": 0.17,
+   "T": 5.0
+  },
+  {
+   "id": 127,
+   "name": "IRWIN, SiCL",
+   "series": "Irwin",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 4.0
+  },
+  {
+   "id": 128,
+   "name": "IVAN, SiL",
+   "series": "Ivan",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 129,
+   "name": "JUDSON, SiL",
+   "series": "Judson",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 130,
+   "name": "KAHOLA, SiL",
+   "series": "Kahola",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 131,
+   "name": "KANZA, LFS",
+   "series": "Kanza",
+   "texture": "LFS",
+   "textureName": "loamy fine sand",
+   "K": 0.17,
+   "T": 5.0
+  },
+  {
+   "id": 132,
+   "name": "KASKI, L",
+   "series": "Kaski",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 133,
+   "name": "KAW, SiL",
+   "series": "Kaw",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 134,
+   "name": "KEITH, SiL",
+   "series": "Keith",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 135,
+   "name": "KENESAW, SiL",
+   "series": "Kenesaw",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 136,
+   "name": "KENNEBEC, SiL",
+   "series": "Kennebec",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 137,
+   "name": "KENOMA, SiL",
+   "series": "Kenoma",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.43,
+   "T": 4.0
+  },
+  {
+   "id": 138,
+   "name": "KIM, L",
+   "series": "Kim",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 139,
+   "name": "KIMO, SiCL",
+   "series": "Kimo",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 5.0
+  },
+  {
+   "id": 140,
+   "name": "KINGFISHER, SiL",
+   "series": "Kingfisher",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 4.0
+  },
+  {
+   "id": 141,
+   "name": "KINGMAN, SiCL",
+   "series": "Kingman",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 142,
+   "name": "KINGSDOWN, FSL",
+   "series": "Kingsdown",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.2,
+   "T": 5.0
+  },
+  {
+   "id": 143,
+   "name": "KIPSON, SiL",
+   "series": "Kipson",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 2.0
+  },
+  {
+   "id": 144,
+   "name": "KIRKLAND, SiL",
+   "series": "Kirkland",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.43,
+   "T": 4.0
+  },
+  {
+   "id": 145,
+   "name": "KNOX, SiL",
+   "series": "Knox",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 146,
+   "name": "KONOWA, FSL",
+   "series": "Konowa",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.24,
+   "T": 5.0
+  },
+  {
+   "id": 147,
+   "name": "KRIER, L",
+   "series": "Krier",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.32,
+   "T": 3.0
+  },
+  {
+   "id": 148,
+   "name": "KRIER, FSL",
+   "series": "Krier",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.24,
+   "T": 3.0
+  },
+  {
+   "id": 149,
+   "name": "KUMA, SiL",
+   "series": "Kuma",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 150,
+   "name": "LABETTE, SiCL",
+   "series": "Labette",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 3.0
+  },
+  {
+   "id": 151,
+   "name": "LADOGA, SiL",
+   "series": "Ladoga",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 152,
+   "name": "LADYSMITH, SiCL",
+   "series": "Ladysmith",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 4.0
+  },
+  {
+   "id": 153,
+   "name": "LANCASTER, L",
+   "series": "Lancaster",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.28,
+   "T": 4.0
+  },
+  {
+   "id": 154,
+   "name": "LANTON, SiCL",
+   "series": "Lanton",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 155,
+   "name": "LAS, CL",
+   "series": "Las",
+   "texture": "CL",
+   "textureName": "clay loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 156,
+   "name": "LAS, CL, mod. deep",
+   "series": "Las",
+   "texture": "CL, mod. deep",
+   "textureName": "clay loam",
+   "K": 0.32,
+   "T": 4.0
+  },
+  {
+   "id": 157,
+   "name": "LAS ANIMAS, SL",
+   "series": "Las Animas",
+   "texture": "SL",
+   "textureName": "sandy loam",
+   "K": 0.24,
+   "T": 5.0
+  },
+  {
+   "id": 158,
+   "name": "LAS ANIMAS, LS",
+   "series": "Las Animas",
+   "texture": "LS",
+   "textureName": "loamy sand",
+   "K": 0.17,
+   "T": 5.0
+  },
+  {
+   "id": 159,
+   "name": "LAS ANIMAS, CL",
+   "series": "Las Animas",
+   "texture": "CL",
+   "textureName": "clay loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 160,
+   "name": "LEANNA, SiL",
+   "series": "Leanna",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.37,
+   "T": 5.0
+  },
+  {
+   "id": 161,
+   "name": "LEBO, SiCL",
+   "series": "Lebo",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.32,
+   "T": 4.0
+  },
+  {
+   "id": 162,
+   "name": "LEBO, channery SiCL",
+   "series": "Lebo",
+   "texture": "channery SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.24,
+   "T": 4.0
+  },
+  {
+   "id": 163,
+   "name": "LESHARA, CL",
+   "series": "Leshara",
+   "texture": "CL",
+   "textureName": "clay loam",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 164,
+   "name": "LESHO, CL",
+   "series": "Lesho",
+   "texture": "CL",
+   "textureName": "clay loam",
+   "K": 0.28,
+   "T": 4.0
+  },
+  {
+   "id": 165,
+   "name": "LIKES, LS",
+   "series": "Likes",
+   "texture": "LS",
+   "textureName": "loamy sand",
+   "K": 0.17,
+   "T": 5.0
+  },
+  {
+   "id": 166,
+   "name": "LINCOLN, LFS",
+   "series": "Lincoln",
+   "texture": "LFS",
+   "textureName": "loamy fine sand",
+   "K": 0.17,
+   "T": 5.0
+  },
+  {
+   "id": 167,
+   "name": "LINCOLN, FSL",
+   "series": "Lincoln",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.24,
+   "T": 5.0
+  },
+  {
+   "id": 168,
+   "name": "LISMAS, C",
+   "series": "Lismas",
+   "texture": "C",
+   "textureName": "clay",
+   "K": 0.28,
+   "T": 2.0
+  },
+  {
+   "id": 169,
+   "name": "LOCKHARD, SiL",
+   "series": "Lockhard",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.37,
+   "T": 4.0
+  },
+  {
+   "id": 170,
+   "name": "LOFTON, CL",
+   "series": "Lofton",
+   "texture": "CL",
+   "textureName": "clay loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 171,
+   "name": "LOFTON, FSL",
+   "series": "Lofton",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.24,
+   "T": 5.0
+  },
+  {
+   "id": 172,
+   "name": "LONGFORD, SiL",
+   "series": "Longford",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 173,
+   "name": "LUBBOCK, SiL",
+   "series": "Lubbock",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 174,
+   "name": "LUCIEN, L",
+   "series": "Lucien",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.32,
+   "T": 2.0
+  },
+  {
+   "id": 175,
+   "name": "LULA, SiL",
+   "series": "Lula",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 4.0
+  },
+  {
+   "id": 176,
+   "name": "MANGUM, C",
+   "series": "Mangum",
+   "texture": "C",
+   "textureName": "clay",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 177,
+   "name": "MANSIC, CL",
+   "series": "Mansic",
+   "texture": "CL",
+   "textureName": "clay loam",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 178,
+   "name": "MANSKER, CL",
+   "series": "Mansker",
+   "texture": "CL",
+   "textureName": "clay loam",
+   "K": 0.28,
+   "T": 4.0
+  },
+  {
+   "id": 179,
+   "name": "MANTER, FSL",
+   "series": "Manter",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.2,
+   "T": 5.0
+  },
+  {
+   "id": 180,
+   "name": "MANVEL, SiL",
+   "series": "Manvel",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.37,
+   "T": 5.0
+  },
+  {
+   "id": 181,
+   "name": "MARSHALL, SiL",
+   "series": "Marshall",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 182,
+   "name": "MARTIN, SiCL",
+   "series": "Martin",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 4.0
+  },
+  {
+   "id": 183,
+   "name": "MASON, SiL",
+   "series": "Mason",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 184,
+   "name": "MATFIELD, SiL",
+   "series": "Matfield",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.24,
+   "T": 3.0
+  },
+  {
+   "id": 185,
+   "name": "MAYBERRY, CL",
+   "series": "Mayberry",
+   "texture": "CL",
+   "textureName": "clay loam",
+   "K": 0.37,
+   "T": 4.0
+  },
+  {
+   "id": 186,
+   "name": "MAYES, SiCL",
+   "series": "Mayes",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 4.0
+  },
+  {
+   "id": 187,
+   "name": "McCOOK, SiL",
+   "series": "Mccook",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 188,
+   "name": "McCOOK, FSL",
+   "series": "Mccook",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.2,
+   "T": 5.0
+  },
+  {
+   "id": 189,
+   "name": "McCUNE, SiL",
+   "series": "Mccune",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.37,
+   "T": 5.0
+  },
+  {
+   "id": 190,
+   "name": "McLAIN, SiL",
+   "series": "Mclain",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.37,
+   "T": 5.0
+  },
+  {
+   "id": 191,
+   "name": "MENTO, SiL",
+   "series": "Mento",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.37,
+   "T": 4.0
+  },
+  {
+   "id": 192,
+   "name": "MILAN, L",
+   "series": "Milan",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 193,
+   "name": "MINCO, SiL",
+   "series": "Minco",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 194,
+   "name": "MINNEQUA, SiL",
+   "series": "Minnequa",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.37,
+   "T": 4.0
+  },
+  {
+   "id": 195,
+   "name": "MISSLER, SiCL",
+   "series": "Missler",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 196,
+   "name": "MONONA, SiL",
+   "series": "Monona",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 197,
+   "name": "MORRILL, L",
+   "series": "Morrill",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 198,
+   "name": "MUIR, SiL",
+   "series": "Muir",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 199,
+   "name": "MUNJOR, SL",
+   "series": "Munjor",
+   "texture": "SL",
+   "textureName": "sandy loam",
+   "K": 0.24,
+   "T": 5.0
+  },
+  {
+   "id": 200,
+   "name": "NARON, FSL",
+   "series": "Naron",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.2,
+   "T": 5.0
+  },
+  {
+   "id": 201,
+   "name": "NASH, SiL",
+   "series": "Nash",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 4.0
+  },
+  {
+   "id": 202,
+   "name": "NASHVILLE, SiL",
+   "series": "Nashville",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 4.0
+  },
+  {
+   "id": 203,
+   "name": "NESS, C",
+   "series": "Ness",
+   "texture": "C",
+   "textureName": "clay",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 204,
+   "name": "NEW CAMBRIA, SiC",
+   "series": "New Cambria",
+   "texture": "SiC",
+   "textureName": "silty clay",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 205,
+   "name": "NEW CAMBRIA, SiCL",
+   "series": "New Cambria",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 5.0
+  },
+  {
+   "id": 206,
+   "name": "NEWTONIA, SiL",
+   "series": "Newtonia",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 207,
+   "name": "NIBSON, SiL",
+   "series": "Nibson",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 2.0
+  },
+  {
+   "id": 208,
+   "name": "NIOTAZE, FSL",
+   "series": "Niotaze",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.2,
+   "T": 3.0
+  },
+  {
+   "id": 209,
+   "name": "NIXA, SiL",
+   "series": "Nixa",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 3.0
+  },
+  {
+   "id": 210,
+   "name": "NODAWAY, SiL",
+   "series": "Nodaway",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.37,
+   "T": 5.0
+  },
+  {
+   "id": 211,
+   "name": "NORGE, SiL",
+   "series": "Norge",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 212,
+   "name": "NOWATA, SiL",
+   "series": "Nowata",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 3.0
+  },
+  {
+   "id": 213,
+   "name": "NUCKOLLS, SiL",
+   "series": "Nuckolls",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 214,
+   "name": "OKEMAH, Sil",
+   "series": "Okemah",
+   "texture": "Sil",
+   "textureName": "silt loam",
+   "K": 0.37,
+   "T": 4.0
+  },
+  {
+   "id": 215,
+   "name": "OLMITZ, CL",
+   "series": "Olmitz",
+   "texture": "CL",
+   "textureName": "clay loam",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 216,
+   "name": "OLPE, gravelly SiL",
+   "series": "Olpe",
+   "texture": "gravelly SiL",
+   "textureName": "silt loam",
+   "K": 0.24,
+   "T": 3.0
+  },
+  {
+   "id": 217,
+   "name": "OLPE, SiL",
+   "series": "Olpe",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 3.0
+  },
+  {
+   "id": 218,
+   "name": "ONAWA, SiC",
+   "series": "Onawa",
+   "texture": "SiC",
+   "textureName": "silty clay",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 219,
+   "name": "ONAWA, SiCL",
+   "series": "Onawa",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.43,
+   "T": 5.0
+  },
+  {
+   "id": 220,
+   "name": "ORTELLO, FSL",
+   "series": "Ortello",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.2,
+   "T": 5.0
+  },
+  {
+   "id": 221,
+   "name": "OSAGE, SiC",
+   "series": "Osage",
+   "texture": "SiC",
+   "textureName": "silty clay",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 222,
+   "name": "OSAGE, SiCL",
+   "series": "Osage",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 5.0
+  },
+  {
+   "id": 223,
+   "name": "OSKA, SiCL",
+   "series": "Oska",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 3.0
+  },
+  {
+   "id": 224,
+   "name": "OST, CL",
+   "series": "Ost",
+   "texture": "CL",
+   "textureName": "clay loam",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 225,
+   "name": "OTERO, SL",
+   "series": "Otero",
+   "texture": "SL",
+   "textureName": "sandy loam",
+   "K": 0.24,
+   "T": 5.0
+  },
+  {
+   "id": 226,
+   "name": "OTERO, gravelly SL",
+   "series": "Otero",
+   "texture": "gravelly SL",
+   "textureName": "sandy loam",
+   "K": 0.17,
+   "T": 5.0
+  },
+  {
+   "id": 227,
+   "name": "OWENS, CL",
+   "series": "Owens",
+   "texture": "CL",
+   "textureName": "clay loam",
+   "K": 0.37,
+   "T": 2.0
+  },
+  {
+   "id": 228,
+   "name": "PARSONS, SiL",
+   "series": "Parsons",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.43,
+   "T": 4.0
+  },
+  {
+   "id": 229,
+   "name": "PAWNEE, CL",
+   "series": "Pawnee",
+   "texture": "CL",
+   "textureName": "clay loam",
+   "K": 0.37,
+   "T": 4.0
+  },
+  {
+   "id": 230,
+   "name": "PENDON, CL",
+   "series": "Pendon",
+   "texture": "CL",
+   "textureName": "clay loam",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 231,
+   "name": "PENROSE, L",
+   "series": "Penrose",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.32,
+   "T": 2.0
+  },
+  {
+   "id": 232,
+   "name": "PLATTE, FSL",
+   "series": "Platte",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.24,
+   "T": 2.0
+  },
+  {
+   "id": 233,
+   "name": "PLEASANT, SiCL",
+   "series": "Pleasant",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 4.0
+  },
+  {
+   "id": 234,
+   "name": "PLEVNA, FSL",
+   "series": "Plevna",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.2,
+   "T": 5.0
+  },
+  {
+   "id": 235,
+   "name": "POLO, SiL",
+   "series": "Polo",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 236,
+   "name": "POND CREEK, SiL",
+   "series": "Pond Creek",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 237,
+   "name": "PORT, SiL",
+   "series": "Port",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 238,
+   "name": "POTTER, L",
+   "series": "Potter",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.32,
+   "T": 2.0
+  },
+  {
+   "id": 239,
+   "name": "PRATT, LFS",
+   "series": "Pratt",
+   "texture": "LFS",
+   "textureName": "loamy fine sand",
+   "K": 0.17,
+   "T": 5.0
+  },
+  {
+   "id": 240,
+   "name": "PROMISE, C",
+   "series": "Promise",
+   "texture": "C",
+   "textureName": "clay",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 241,
+   "name": "PRUE, FSL",
+   "series": "Prue",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.2,
+   "T": 5.0
+  },
+  {
+   "id": 242,
+   "name": "QUINLAN, L",
+   "series": "Quinlan",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.32,
+   "T": 2.0
+  },
+  {
+   "id": 243,
+   "name": "RADLEY, SiL",
+   "series": "Radley",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 244,
+   "name": "RANDALL, C",
+   "series": "Randall",
+   "texture": "C",
+   "textureName": "clay",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 245,
+   "name": "READING, SiL",
+   "series": "Reading",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 246,
+   "name": "REINACH, SiL",
+   "series": "Reinach",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 247,
+   "name": "RENFROW, SiL",
+   "series": "Renfrow",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.43,
+   "T": 4.0
+  },
+  {
+   "id": 248,
+   "name": "RICHFIELD, SiL",
+   "series": "Richfield",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 249,
+   "name": "RICHFIELD, FSL",
+   "series": "Richfield",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.2,
+   "T": 5.0
+  },
+  {
+   "id": 250,
+   "name": "RICHFIELD, LFS",
+   "series": "Richfield",
+   "texture": "LFS",
+   "textureName": "loamy fine sand",
+   "K": 0.17,
+   "T": 5.0
+  },
+  {
+   "id": 251,
+   "name": "RINGO, SiC",
+   "series": "Ringo",
+   "texture": "SiC",
+   "textureName": "silty clay",
+   "K": 0.28,
+   "T": 3.0
+  },
+  {
+   "id": 252,
+   "name": "RINGO, SiCL",
+   "series": "Ringo",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 3.0
+  },
+  {
+   "id": 253,
+   "name": "RIVERTON, SiL",
+   "series": "Riverton",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.24,
+   "T": 3.0
+  },
+  {
+   "id": 254,
+   "name": "ROSEHILL, SiC",
+   "series": "Rosehill",
+   "texture": "SiC",
+   "textureName": "silty clay",
+   "K": 0.28,
+   "T": 3.0
+  },
+  {
+   "id": 255,
+   "name": "ROXBURY, SiL",
+   "series": "Roxbury",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 256,
+   "name": "RUELLA, L",
+   "series": "Ruella",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 257,
+   "name": "RYUS, SiCL",
+   "series": "Ryus",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 258,
+   "name": "SALTINE, SiL",
+   "series": "Saltine",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 259,
+   "name": "SARPY, FS",
+   "series": "Sarpy",
+   "texture": "FS",
+   "textureName": "fine sand",
+   "K": 0.15,
+   "T": 5.0
+  },
+  {
+   "id": 260,
+   "name": "SARPY, LFS",
+   "series": "Sarpy",
+   "texture": "LFS",
+   "textureName": "loamy fine sand",
+   "K": 0.17,
+   "T": 5.0
+  },
+  {
+   "id": 261,
+   "name": "SATANTA, L",
+   "series": "Satanta",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 262,
+   "name": "SATANTA, FSL",
+   "series": "Satanta",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.2,
+   "T": 5.0
+  },
+  {
+   "id": 263,
+   "name": "SCHAMBER, SL",
+   "series": "Schamber",
+   "texture": "SL",
+   "textureName": "sandy loam",
+   "K": 0.17,
+   "T": 3.0
+  },
+  {
+   "id": 264,
+   "name": "SECESH, SiL",
+   "series": "Secesh",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 265,
+   "name": "SHARPSBURG, SiCL",
+   "series": "Sharpsburg",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 266,
+   "name": "SHELBY, CL",
+   "series": "Shelby",
+   "texture": "CL",
+   "textureName": "clay loam",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 267,
+   "name": "SHELBY, L",
+   "series": "Shelby",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.2,
+   "T": 5.0
+  },
+  {
+   "id": 268,
+   "name": "SHELLABARGER, FSL",
+   "series": "Shellabarger",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.2,
+   "T": 5.0
+  },
+  {
+   "id": 269,
+   "name": "SHELLABARGER, LFS",
+   "series": "Shellabarger",
+   "texture": "LFS",
+   "textureName": "loamy fine sand",
+   "K": 0.17,
+   "T": 5.0
+  },
+  {
+   "id": 270,
+   "name": "SHIDLER, SiCL",
+   "series": "Shidler",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.32,
+   "T": 1.0
+  },
+  {
+   "id": 271,
+   "name": "SIBLEYVILLE, L",
+   "series": "Sibleyville",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.28,
+   "T": 4.0
+  },
+  {
+   "id": 272,
+   "name": "SMOLAN, SiL",
+   "series": "Smolan",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.37,
+   "T": 4.0
+  },
+  {
+   "id": 273,
+   "name": "SOGN, SiCL",
+   "series": "Sogn",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.32,
+   "T": 1.0
+  },
+  {
+   "id": 274,
+   "name": "SOLOMON, SiC",
+   "series": "Solomon",
+   "texture": "SiC",
+   "textureName": "silty clay",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 275,
+   "name": "SPEARVILLE, SiCL",
+   "series": "Spearville",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 4.0
+  },
+  {
+   "id": 276,
+   "name": "STEEDMAN, CL",
+   "series": "Steedman",
+   "texture": "CL",
+   "textureName": "clay loam",
+   "K": 0.32,
+   "T": 3.0
+  },
+  {
+   "id": 277,
+   "name": "STEINAUER, CL",
+   "series": "Steinauer",
+   "texture": "CL",
+   "textureName": "clay loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 278,
+   "name": "STEPHENVILLE, FSL",
+   "series": "Stephenville",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.24,
+   "T": 4.0
+  },
+  {
+   "id": 279,
+   "name": "SUMMIT, SiCL",
+   "series": "Summit",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 4.0
+  },
+  {
+   "id": 280,
+   "name": "SUTPHEN, SiC",
+   "series": "Sutphen",
+   "texture": "SiC",
+   "textureName": "silty clay",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 281,
+   "name": "SUTPHEN, SiCL",
+   "series": "Sutphen",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 5.0
+  },
+  {
+   "id": 282,
+   "name": "SWEETWATER, CL",
+   "series": "Sweetwater",
+   "texture": "CL",
+   "textureName": "clay loam",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 283,
+   "name": "TABLER, CL",
+   "series": "Tabler",
+   "texture": "CL",
+   "textureName": "clay loam",
+   "K": 0.37,
+   "T": 4.0
+  },
+  {
+   "id": 284,
+   "name": "TALIHINA, CL",
+   "series": "Talihina",
+   "texture": "CL",
+   "textureName": "clay loam",
+   "K": 0.32,
+   "T": 2.0
+  },
+  {
+   "id": 285,
+   "name": "TALOKA, SiL",
+   "series": "Taloka",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.43,
+   "T": 5.0
+  },
+  {
+   "id": 286,
+   "name": "TAMAHA, SiL",
+   "series": "Tamaha",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.43,
+   "T": 5.0
+  },
+  {
+   "id": 287,
+   "name": "THURMAN, LFS",
+   "series": "Thurman",
+   "texture": "LFS",
+   "textureName": "loamy fine sand",
+   "K": 0.17,
+   "T": 5.0
+  },
+  {
+   "id": 288,
+   "name": "TIMKEN, C",
+   "series": "Timken",
+   "texture": "C",
+   "textureName": "clay",
+   "K": 0.32,
+   "T": 2.0
+  },
+  {
+   "id": 289,
+   "name": "TIVOLI, FS",
+   "series": "Tivoli",
+   "texture": "FS",
+   "textureName": "fine sand",
+   "K": 0.15,
+   "T": 5.0
+  },
+  {
+   "id": 290,
+   "name": "TIVOLI, LFS",
+   "series": "Tivoli",
+   "texture": "LFS",
+   "textureName": "loamy fine sand",
+   "K": 0.17,
+   "T": 5.0
+  },
+  {
+   "id": 291,
+   "name": "TOBIN, SiL",
+   "series": "Tobin",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 292,
+   "name": "TONTI, SiL",
+   "series": "Tonti",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.37,
+   "T": 3.0
+  },
+  {
+   "id": 293,
+   "name": "TRAVESSILLA, SL",
+   "series": "Travessilla",
+   "texture": "SL",
+   "textureName": "sandy loam",
+   "K": 0.17,
+   "T": 1.0
+  },
+  {
+   "id": 294,
+   "name": "TULLY, SiCL",
+   "series": "Tully",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 4.0
+  },
+  {
+   "id": 295,
+   "name": "TULLY, cherty SiCL",
+   "series": "Tully",
+   "texture": "cherty SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.28,
+   "T": 4.0
+  },
+  {
+   "id": 296,
+   "name": "ULY, SiL",
+   "series": "Uly",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 297,
+   "name": "ULYSSES, SiL",
+   "series": "Ulysses",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 298,
+   "name": "VALENTINE, FS",
+   "series": "Valentine",
+   "texture": "FS",
+   "textureName": "fine sand",
+   "K": 0.15,
+   "T": 5.0
+  },
+  {
+   "id": 299,
+   "name": "VALENTINE, LFS",
+   "series": "Valentine",
+   "texture": "LFS",
+   "textureName": "loamy fine sand",
+   "K": 0.17,
+   "T": 5.0
+  },
+  {
+   "id": 300,
+   "name": "VANOSS, SiL",
+   "series": "Vanoss",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 301,
+   "name": "VERDIGRIS, SiL",
+   "series": "Verdigris",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 302,
+   "name": "VERNON, CL",
+   "series": "Vernon",
+   "texture": "CL",
+   "textureName": "clay loam",
+   "K": 0.37,
+   "T": 3.0
+  },
+  {
+   "id": 303,
+   "name": "VERNON, FSL",
+   "series": "Vernon",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.28,
+   "T": 3.0
+  },
+  {
+   "id": 304,
+   "name": "VINLAND, SiCL",
+   "series": "Vinland",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.32,
+   "T": 2.0
+  },
+  {
+   "id": 305,
+   "name": "VOLIN, SiL",
+   "series": "Volin",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 306,
+   "name": "VONA, LFS",
+   "series": "Vona",
+   "texture": "LFS",
+   "textureName": "loamy fine sand",
+   "K": 0.17,
+   "T": 5.0
+  },
+  {
+   "id": 307,
+   "name": "WABASH, SiC",
+   "series": "Wabash",
+   "texture": "SiC",
+   "textureName": "silty clay",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 308,
+   "name": "WABASH, SiCL",
+   "series": "Wabash",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 5.0
+  },
+  {
+   "id": 309,
+   "name": "WAKEEN, SiL",
+   "series": "Wakeen",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 4.0
+  },
+  {
+   "id": 310,
+   "name": "WALDECK, FSL",
+   "series": "Waldeck",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.2,
+   "T": 5.0
+  },
+  {
+   "id": 311,
+   "name": "WANN, FSL",
+   "series": "Wann",
+   "texture": "FSL",
+   "textureName": "fine sandy loam",
+   "K": 0.2,
+   "T": 5.0
+  },
+  {
+   "id": 312,
+   "name": "WANN, L",
+   "series": "Wann",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 313,
+   "name": "WAURIKA, SiL",
+   "series": "Waurika",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.43,
+   "T": 4.0
+  },
+  {
+   "id": 314,
+   "name": "WELDA, SiL",
+   "series": "Welda",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 315,
+   "name": "WELLS, L",
+   "series": "Wells",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 316,
+   "name": "WOODSON, SiL",
+   "series": "Woodson",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.43,
+   "T": 4.0
+  },
+  {
+   "id": 317,
+   "name": "WOODWARD, L",
+   "series": "Woodward",
+   "texture": "L",
+   "textureName": "loam",
+   "K": 0.32,
+   "T": 4.0
+  },
+  {
+   "id": 318,
+   "name": "WYMORE, SiCL",
+   "series": "Wymore",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 4.0
+  },
+  {
+   "id": 319,
+   "name": "WYNONA, SiL",
+   "series": "Wynona",
+   "texture": "SiL",
+   "textureName": "silt loam",
+   "K": 0.32,
+   "T": 5.0
+  },
+  {
+   "id": 320,
+   "name": "YAHOLA, SL",
+   "series": "Yahola",
+   "texture": "SL",
+   "textureName": "sandy loam",
+   "K": 0.24,
+   "T": 5.0
+  },
+  {
+   "id": 321,
+   "name": "ZAAR, SiC",
+   "series": "Zaar",
+   "texture": "SiC",
+   "textureName": "silty clay",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 322,
+   "name": "ZAVALA, SL",
+   "series": "Zavala",
+   "texture": "SL",
+   "textureName": "sandy loam",
+   "K": 0.24,
+   "T": 5.0
+  },
+  {
+   "id": 323,
+   "name": "ZENDA, CL",
+   "series": "Zenda",
+   "texture": "CL",
+   "textureName": "clay loam",
+   "K": 0.28,
+   "T": 5.0
+  },
+  {
+   "id": 324,
+   "name": "ZOOK, SiCL",
+   "series": "Zook",
+   "texture": "SiCL",
+   "textureName": "silty clay loam",
+   "K": 0.37,
+   "T": 5.0
+  }
+ ]
+}

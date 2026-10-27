@@ -1,0 +1,247 @@
+/* USLE calculator styles. Everything is scoped under .usle-app so the tool can
+   be dropped into an OmniUpdate page without touching the page's own styles. */
+
+.usle-app {
+  --usle-accent: #512888;        /* K-State purple */
+  --usle-accent-strong: #3e1d6b;
+  --usle-accent-soft: #f2edf8;
+  --usle-surface: #ffffff;
+  --usle-surface-2: #f7f6f9;
+  --usle-border: #dedbe5;
+  --usle-text: #1d1b22;
+  --usle-text-2: #4f4b58;
+  --usle-muted: #6f6a79;
+  --usle-good: #0ca30c;
+  --usle-good-text: #10681a;
+  --usle-good-soft: #e9f6ea;
+  --usle-critical: #d03b3b;
+  --usle-critical-text: #a12626;
+  --usle-critical-soft: #fbecec;
+  --usle-bar: #512888;
+  --usle-bar-current: #9a94a6;
+  --usle-radius: 10px;
+
+  color-scheme: light;
+  color: var(--usle-text);
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.45;
+  box-sizing: border-box;
+}
+.usle-app *, .usle-app *::before, .usle-app *::after { box-sizing: inherit; }
+.usle-app h2, .usle-app h3, .usle-app h4, .usle-app p { margin: 0; }
+.usle-app button, .usle-app input, .usle-app select { font: inherit; color: inherit; }
+.usle-app :focus-visible { outline: 3px solid color-mix(in srgb, var(--usle-accent) 55%, transparent); outline-offset: 2px; }
+.usle-app .usle-num { font-variant-numeric: tabular-nums; }
+.usle-app [hidden] { display: none !important; }
+.usle-full { grid-column: 1 / -1; }
+.usle-sub { margin-top: 14px; }
+.usle-check { display: flex; gap: 8px; align-items: flex-start; font-size: .92rem; cursor: pointer; }
+.usle-check input { accent-color: var(--usle-accent); width: 18px; height: 18px; margin: 2px 0 0; flex: none; }
+.usle-limit { padding: 10px 12px; border-radius: 8px; background: var(--usle-surface-2); font-size: .88rem; color: var(--usle-text-2); display: grid; gap: 6px; }
+.usle-limit.is-warn { background: #fff6e5; color: #6b4a00; }
+.usle-limit p { margin: 0; }
+.usle-app .usle-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---------- tool switch (agricultural / urban) ---------- */
+.usle-tools { display: inline-flex; flex-wrap: wrap; gap: 4px; padding: 4px; margin-bottom: 14px; border-radius: 999px; background: var(--usle-accent-soft); font-size: .9rem; }
+.usle-tools a, .usle-tools span { padding: 5px 14px; border-radius: 999px; text-decoration: none; }
+.usle-tools a { color: var(--usle-accent-strong); }
+.usle-tools a:hover { background: #fff; }
+.usle-tools span[aria-current] { background: var(--usle-accent); color: #fff; font-weight: 600; }
+
+/* ---------- urban practice checklists ---------- */
+.usle-practices { border: 1px solid var(--usle-border); border-radius: 8px; padding: 12px 14px; margin: 0 0 12px; min-width: 0; }
+.usle-practices legend { padding: 0 6px; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
+.usle-pfac { font-weight: 600; font-size: .85rem; color: var(--usle-accent-strong); background: var(--usle-accent-soft); border-radius: 999px; padding: 1px 10px; font-variant-numeric: tabular-nums; }
+.usle-practices .usle-hint { margin: 2px 0 10px; }
+.usle-checkcols { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 6px 20px; }
+.usle-checkcols > div { display: grid; gap: 6px; align-content: start; }
+.usle-checkhead { font-size: .78rem; text-transform: uppercase; letter-spacing: .05em; color: var(--usle-muted); font-weight: 600; margin: 0 0 2px; }
+
+/* ---------- header ---------- */
+.usle-header { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px 24px; margin-bottom: 20px; }
+.usle-header h2 { font-size: 1.6rem; line-height: 1.2; font-weight: 700; }
+.usle-header .usle-sub { color: var(--usle-text-2); margin-top: 4px; max-width: 62ch; }
+.usle-eq { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .95rem; background: var(--usle-accent-soft); color: var(--usle-accent-strong); padding: 6px 12px; border-radius: 999px; white-space: nowrap; }
+
+/* ---------- layout ---------- */
+.usle-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, 430px); gap: 24px; align-items: start; }
+/* Results stay in view while inputs change; the column scrolls on its own if taller than the screen. */
+.usle-results { position: sticky; top: 16px; display: grid; gap: 16px; max-height: calc(100vh - 32px); overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; padding-right: 2px; }
+@media (max-width: 920px) {
+  .usle-layout { grid-template-columns: minmax(0, 1fr); }
+  .usle-results { position: static; max-height: none; overflow: visible; }
+}
+.usle-steps { display: grid; gap: 16px; }
+
+/* ---------- cards ---------- */
+.usle-card { background: var(--usle-surface); border: 1px solid var(--usle-border); border-radius: var(--usle-radius); padding: 18px 20px; }
+.usle-step-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+.usle-step-no { flex: none; width: 28px; height: 28px; border-radius: 50%; background: var(--usle-accent); color: #fff; display: grid; place-items: center; font-weight: 700; font-size: .9rem; }
+.usle-step-head h3 { font-size: 1.1rem; font-weight: 650; flex: 1; }
+.usle-step-head h3 small { display: block; font-weight: 400; font-size: .85rem; color: var(--usle-muted); }
+.usle-chip { flex: none; font-variant-numeric: tabular-nums; font-weight: 650; background: var(--usle-accent-soft); color: var(--usle-accent-strong); border-radius: 999px; padding: 4px 12px; font-size: .95rem; white-space: nowrap; }
+.usle-card h4 { font-size: 1rem; font-weight: 650; margin-bottom: 10px; }
+
+/* ---------- form controls ---------- */
+.usle-grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px 18px; }
+.usle-field { display: grid; grid-template-columns: minmax(0, 1fr); gap: 6px; min-width: 0; align-content: start; }
+.usle-field > label, .usle-legend { font-weight: 600; font-size: .92rem; }
+.usle-field .usle-hint { font-size: .85rem; color: var(--usle-muted); }
+.usle-input, .usle-select { width: 100%; min-height: 40px; padding: 7px 10px; border: 1px solid #c9c5d2; border-radius: 8px; background: var(--usle-surface); }
+.usle-select[size] { padding: 4px; min-height: 0; }
+.usle-input:disabled, .usle-select:disabled { background: var(--usle-surface-2); color: var(--usle-muted); }
+.usle-input[aria-invalid="true"] { border-color: var(--usle-critical); }
+.usle-error { color: var(--usle-critical-text); font-size: .85rem; min-height: 0; }
+.usle-error:empty { display: none; }
+.usle-inline { display: flex; gap: 10px; align-items: center; }
+.usle-inline .usle-input { width: 110px; flex: none; }
+.usle-inline input[type="range"] { flex: 1; min-width: 0; }
+.usle-app input[type="range"] { accent-color: var(--usle-accent); }
+.usle-unit { color: var(--usle-muted); font-size: .9rem; }
+
+.usle-seg { display: flex; flex-wrap: wrap; gap: 6px; border: 0; padding: 0; margin: 0; min-width: 0; grid-column: 1 / -1; }
+.usle-seg label { flex: 1 1 150px; }
+.usle-seg.usle-seg-half { grid-column: auto; }
+.usle-seg legend { padding: 0; margin-bottom: 6px; }
+.usle-seg label { position: relative; display: inline-flex; flex-direction: column; justify-content: center; gap: 1px; padding: 7px 12px; border: 1px solid #c9c5d2; border-radius: 8px; cursor: pointer; background: var(--usle-surface); font-size: .92rem; min-height: 40px; }
+.usle-seg label small { color: var(--usle-muted); font-size: .8rem; font-variant-numeric: tabular-nums; }
+.usle-seg input { position: absolute; opacity: 0; pointer-events: none; }
+.usle-seg input:checked + span { font-weight: 650; }
+.usle-seg label:has(input:checked) { border-color: var(--usle-accent); background: var(--usle-accent-soft); box-shadow: inset 0 0 0 1px var(--usle-accent); }
+.usle-seg label:has(input:focus-visible) { outline: 3px solid color-mix(in srgb, var(--usle-accent) 55%, transparent); outline-offset: 2px; }
+
+.usle-calc { margin-top: 14px; padding: 10px 12px; background: var(--usle-surface-2); border-radius: 8px; font-size: .9rem; color: var(--usle-text-2); font-variant-numeric: tabular-nums; }
+.usle-calc b { color: var(--usle-text); }
+.usle-note { font-size: .85rem; color: var(--usle-muted); margin-top: 8px; }
+
+.usle-about { margin-top: 12px; font-size: .9rem; color: var(--usle-text-2); }
+.usle-about summary { cursor: pointer; color: var(--usle-accent); font-weight: 600; width: fit-content; }
+.usle-about p { margin-top: 8px; max-width: 70ch; }
+
+/* ---------- R map ---------- */
+.usle-map { position: relative; border-radius: 8px; overflow: hidden; border: 1px solid var(--usle-border); cursor: crosshair; background: #fff; }
+.usle-map img { display: block; width: 100%; height: auto; user-select: none; -webkit-user-drag: none; }
+.usle-marker { position: absolute; width: 18px; height: 18px; margin: -9px 0 0 -9px; border-radius: 50%; background: var(--usle-accent); border: 3px solid #fff; box-shadow: 0 0 0 1px rgba(0,0,0,.4), 0 2px 6px rgba(0,0,0,.35); pointer-events: none; }
+.usle-marker[hidden] { display: none; }
+.usle-map-svg { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
+.usle-ctr { fill: none; stroke: rgba(255, 255, 255, .85); stroke-width: 1.1; vector-effect: non-scaling-stroke; }
+.usle-ctr-label { font-size: 11px; font-weight: 700; fill: #0b2546; text-anchor: middle; paint-order: stroke; stroke: rgba(255, 255, 255, .92); stroke-width: 3px; stroke-linejoin: round; font-variant-numeric: tabular-nums; }
+.usle-ks-outline { fill: none; stroke: #2b2733; stroke-width: 1.2; vector-effect: non-scaling-stroke; }
+.usle-counties { fill: none; stroke: rgba(20, 24, 40, .38); stroke-width: .6; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.usle-county-names { display: none; }
+.usle-county-names text { font-size: 6.4px; fill: #14131a; text-anchor: middle; paint-order: stroke; stroke: rgba(255, 255, 255, .85); stroke-width: 1.8px; stroke-linejoin: round; }
+.usle-map.show-county-names .usle-county-names { display: inline; }
+.usle-map.show-county-names .usle-towns { display: none; }
+.usle-legend .usle-names-toggle { flex: none; font-size: .82rem; color: var(--usle-text-2); margin-top: -2px; }
+.usle-town circle { fill: #fff; stroke: #1d1b22; stroke-width: 1.2; vector-effect: non-scaling-stroke; }
+.usle-town text { font-size: 10px; fill: #1d1b22; paint-order: stroke; stroke: rgba(255, 255, 255, .9); stroke-width: 2.6px; stroke-linejoin: round; }
+.usle-legend { display: flex; align-items: flex-start; gap: 10px; margin-top: 8px; font-size: .78rem; color: var(--usle-muted); }
+.usle-legend-title { font-weight: 700; color: var(--usle-text-2); line-height: 10px; }
+.usle-legend-scale { flex: 1; min-width: 0; }
+.usle-legend-bar { height: 10px; border-radius: 3px; }
+.usle-legend-ticks { position: relative; height: 16px; font-variant-numeric: tabular-nums; }
+.usle-legend-ticks span { position: absolute; top: 2px; transform: translateX(-50%); }
+.usle-ll { flex-wrap: wrap; }
+.usle-app .usle-ll .usle-input { flex: 1 1 140px; width: auto; }
+.usle-source { font-size: .78rem; color: var(--usle-muted); margin-top: 8px; }
+.usle-source a { color: inherit; }
+
+/* ---------- soil picker ---------- */
+.usle-soil-meta { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 10px; font-size: .92rem; color: var(--usle-text-2); }
+.usle-soil-meta b { color: var(--usle-text); font-variant-numeric: tabular-nums; }
+
+/* ---------- buttons ---------- */
+.usle-app .usle-btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 38px; padding: 6px 14px; border-radius: 8px; border: 1px solid var(--usle-accent); background: var(--usle-accent); color: #fff; font-weight: 600; cursor: pointer; font-size: .92rem; }
+.usle-app .usle-btn:hover { background: var(--usle-accent-strong); }
+.usle-app .usle-btn.usle-ghost { background: var(--usle-surface); color: var(--usle-accent); }
+.usle-app .usle-btn.usle-ghost:hover { background: var(--usle-accent-soft); }
+.usle-app .usle-linkbtn { border: 0; background: none; padding: 0; color: var(--usle-accent); font-weight: 600; cursor: pointer; font-size: .85rem; text-decoration: underline; text-underline-offset: 2px; }
+.usle-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+
+/* ---------- results ---------- */
+.usle-hero-label { font-size: .9rem; color: var(--usle-text-2); font-weight: 600; display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.usle-hero { display: flex; align-items: baseline; gap: 8px; margin: 4px 0 2px; flex-wrap: wrap; }
+.usle-hero .usle-a { font-size: 3.1rem; font-weight: 700; line-height: 1.05; letter-spacing: -0.01em; }
+.usle-hero .usle-a-unit { color: var(--usle-text-2); font-size: 1rem; }
+.usle-units { display: inline-flex; border: 1px solid #c9c5d2; border-radius: 999px; overflow: hidden; }
+.usle-units button { border: 0; background: none; padding: 3px 10px; font-size: .8rem; cursor: pointer; color: var(--usle-text-2); }
+.usle-units button[aria-pressed="true"] { background: var(--usle-accent); color: #fff; }
+
+.usle-status { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; border-radius: 8px; margin: 12px 0; font-size: .95rem; }
+.usle-status svg { flex: none; margin-top: 2px; }
+.usle-status.is-good { background: var(--usle-good-soft); color: var(--usle-good-text); }
+.usle-status.is-bad { background: var(--usle-critical-soft); color: var(--usle-critical-text); }
+.usle-status b { display: block; }
+
+.usle-meter { margin: 6px 0 4px; }
+.usle-meter-track { position: relative; height: 14px; background: var(--usle-surface-2); border-radius: 4px; }
+.usle-meter-fill { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 0 4px 4px 0; transition: width .25s ease; }
+.usle-meter-fill.is-good { background: var(--usle-good); }
+.usle-meter-fill.is-bad { background: var(--usle-critical); }
+.usle-meter-t { position: absolute; top: -5px; bottom: -5px; width: 0; border-left: 2px dashed var(--usle-text); }
+.usle-meter-labels { position: relative; height: 18px; font-size: .78rem; color: var(--usle-muted); font-variant-numeric: tabular-nums; }
+.usle-meter-labels span { position: absolute; top: 2px; transform: translateX(-50%); white-space: nowrap; }
+
+.usle-factors { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: .92rem; }
+.usle-factors th, .usle-factors td { padding: 6px 4px; border-bottom: 1px solid var(--usle-border); text-align: left; }
+.usle-factors th { font-weight: 650; width: 44px; }
+.usle-factors td.usle-v { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; white-space: nowrap; }
+.usle-factors td.usle-d { color: var(--usle-text-2); }
+.usle-factors tr:last-child th, .usle-factors tr:last-child td { border-bottom: 0; }
+
+/* ---------- bar lists (what-if and scenarios) ---------- */
+.usle-bars { display: grid; gap: 4px; position: relative; }
+.usle-bar-row { display: grid; grid-template-columns: minmax(0, 1fr) 54px; grid-template-areas: "label value" "track value"; column-gap: 10px; align-items: center; padding: 6px 6px; border-radius: 6px; }
+.usle-bar-row:hover { background: var(--usle-surface-2); }
+.usle-bar-label { grid-area: label; display: flex; gap: 8px; align-items: baseline; font-size: .88rem; min-width: 0; }
+.usle-bar-label .usle-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.usle-bar-label .usle-tag { flex: none; font-size: .72rem; color: var(--usle-muted); text-transform: uppercase; letter-spacing: .04em; }
+.usle-bar-label .usle-linkbtn { margin-left: auto; flex: none; }
+.usle-bar-track { grid-area: track; position: relative; height: 12px; margin-top: 4px; }
+.usle-bar { position: absolute; left: 0; top: 0; bottom: 0; background: var(--usle-bar); border-radius: 0 4px 4px 0; min-width: 2px; }
+.usle-bar-row.is-current .usle-bar { background: var(--usle-bar-current); }
+.usle-bar-t { position: absolute; top: -3px; bottom: -3px; border-left: 2px dashed var(--usle-text); }
+.usle-bar-value { grid-area: value; text-align: right; font-variant-numeric: tabular-nums; font-size: .88rem; line-height: 1.2; }
+.usle-bar-value b { display: block; font-weight: 650; }
+.usle-bar-value small { color: var(--usle-muted); }
+.usle-bars-foot { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-top: 8px; font-size: .82rem; color: var(--usle-muted); }
+.usle-legend-t { display: inline-flex; align-items: center; gap: 6px; }
+.usle-legend-t::before { content: ""; width: 0; height: 12px; border-left: 2px dashed var(--usle-text); }
+.usle-empty { color: var(--usle-muted); font-size: .9rem; }
+
+.usle-tooltip { position: fixed; z-index: 50; pointer-events: none; background: #1d1b22; color: #fff; font-size: .8rem; line-height: 1.35; padding: 6px 9px; border-radius: 6px; max-width: 260px; box-shadow: 0 4px 14px rgba(0,0,0,.2); font-variant-numeric: tabular-nums; }
+.usle-tooltip[hidden] { display: none; }
+
+.usle-save { display: flex; gap: 8px; margin-bottom: 12px; }
+.usle-save .usle-input { flex: 1; min-width: 0; }
+
+.usle-hints { font-size: .92rem; color: var(--usle-text-2); padding-left: 20px; margin: 8px 0 0; display: grid; gap: 6px; }
+.usle-hints ol { margin: 4px 0 0; padding-left: 20px; font-size: .88rem; }
+.usle-hints-h { font-size: .9rem; font-weight: 650; margin-top: 12px; color: var(--usle-text); }
+
+.usle-notes { font-size: .88rem; color: var(--usle-text-2); }
+.usle-notes summary { cursor: pointer; font-weight: 650; color: var(--usle-text); }
+.usle-notes ul { padding-left: 20px; margin: 8px 0 0; display: grid; gap: 6px; }
+.usle-credit { font-size: .8rem; color: var(--usle-muted); margin-top: 20px; }
+
+/* ---------- mobile summary bar ---------- */
+.usle-mobilebar { display: none; }
+@media (max-width: 920px) {
+  .usle-mobilebar { display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; gap: 10px; align-items: center; justify-content: space-between; padding: 10px 16px; background: var(--usle-surface); border-top: 1px solid var(--usle-border); box-shadow: 0 -4px 14px rgba(0,0,0,.08); font-size: .92rem; }
+  .usle-mobilebar b { font-size: 1.15rem; font-variant-numeric: tabular-nums; }
+  .usle-mobilebar .is-good { color: var(--usle-good-text); }
+  .usle-mobilebar .is-bad { color: var(--usle-critical-text); }
+  .usle-app { padding-bottom: 72px; }
+}
+
+/* ---------- print ---------- */
+@media print {
+  .usle-app { font-size: 11pt; padding: 0; }
+  .usle-layout { display: block; }
+  .usle-results { position: static; margin-top: 12px; }
+  .usle-mobilebar, .usle-actions, .usle-save, .usle-linkbtn, .usle-about, .usle-units, .usle-tooltip, .usle-tools, #usle-ll-form { display: none !important; }
+  .usle-card { break-inside: avoid; border-color: #999; }
+  .usle-select[size] { display: none; }
+}

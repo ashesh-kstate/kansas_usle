@@ -1,0 +1,82 @@
+{
+ "source": "USLE_Agriculture_KS08.xlsm (S. J. Thien, Kansas State University), sheet LSfactor; NRCS Iowa FOTG Section I, USLE Erosion Prediction (Sept 2002), Table II",
+ "about": "The effect of slope length and steepness on water erosion appears in the LS, or topography, factor. Erosion increases when either the length of the slope increases, the steepness of the slope increases, or both.",
+ "method": "nrcs",
+ "methods": {
+  "nrcs": {
+   "label": "NRCS Table II / AH 537",
+   "source": "NRCS Iowa FOTG Section I, USLE Erosion Prediction (Sept 2002), Table II (reproduces all 462 table values); Wischmeier & Smith (1978), AH 537",
+   "equation": "LS = (lambda / 72.6)^m * (65.41 sin^2(theta) + 4.56 sin(theta) + 0.065), theta = atan(s/100)",
+   "steepness": "sine",
+   "unitPlotLength": 72.6,
+   "a": 65.41,
+   "b": 4.56,
+   "c": 0.065,
+   "exponent": [
+    {
+     "minSlope": 5,
+     "m": 0.5
+    },
+    {
+     "greaterThan": 3,
+     "m": 0.4
+    },
+    {
+     "minSlope": 1,
+     "m": 0.3
+    },
+    {
+     "minSlope": 0,
+     "m": 0.2
+    }
+   ]
+  },
+  "workbook": {
+   "label": "Original K-State workbook",
+   "source": "USLE_Agriculture_KS08.xlsm (S. J. Thien, Kansas State University), sheet LSfactor, cells H13 and B45",
+   "excelFormula": {
+    "LS": "=((H9/72.6)^B45)*(0.0065*H11^2+0.045*H11+0.065)",
+    "m": "=IF(H11>=5,0.5,IF(H11>=3,0.4,IF(H11>=1,0.3,0.1)))"
+   },
+   "equation": "LS = (lambda / 72.6)^m * (0.0065 s^2 + 0.045 s + 0.065), s in %",
+   "steepness": "percent",
+   "unitPlotLength": 72.6,
+   "a": 0.0065,
+   "b": 0.045,
+   "c": 0.065,
+   "exponent": [
+    {
+     "minSlope": 5,
+     "m": 0.5
+    },
+    {
+     "minSlope": 3,
+     "m": 0.4
+    },
+    {
+     "minSlope": 1,
+     "m": 0.3
+    },
+    {
+     "minSlope": 0,
+     "m": 0.1
+    }
+   ],
+   "note": "Uses m = 0.4 at exactly 3% (AH 537: 0.3) and m = 0.1 below 1% (AH 537: 0.2). At 500 ft and 3% it gives LS 0.56 vs. 0.46 in NRCS Table II."
+  }
+ },
+ "limits": {
+  "lengthFt": [
+   1,
+   1000
+  ],
+  "slopePct": [
+   0,
+   25
+  ]
+ },
+ "defaults": {
+  "lengthFt": 500,
+  "slopePct": 3
+ }
+}

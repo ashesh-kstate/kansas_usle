@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Urban USLE Calculator</title>
+  <meta name="description" content="Estimate soil loss from Kansas urban and construction sites with the Universal Soil Loss Equation (USLE) and compare erosion-control practices.">
+  <link rel="stylesheet" href="css/usle.css">
+  <style>
+    /* Page shell for the standalone version only. On an OmniUpdate page, copy
+       just the div and the script links below; the site template supplies
+       the rest. */
+    body { margin: 0; background: #f4f2f7; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .usle-page { max-width: 1240px; margin: 0 auto; padding: 24px 16px 40px; }
+  </style>
+</head>
+<body>
+  <main class="usle-page">
+    <!-- USLE calculator (urban and construction sites): start of embeddable snippet -->
+    <div id="usle-app" class="usle-app" data-base="./" data-landuse="urban"></div>
+    <script src="js/usle-model.js"></script>
+    <script src="js/usle-urban-model.js"></script>
+    <script src="js/usle-ui-urban.js"></script>
+    <script src="js/usle-app.js"></script>
+    <!-- USLE calculator: end of embeddable snippet -->
+  </main>
+</body>
+</html>

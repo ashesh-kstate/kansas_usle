@@ -1,0 +1,167 @@
+{
+ "source": "USLE_Urban_KS08.xlsm (S. J. Thien and M. Buckley, Kansas State University), sheets Practices (checkbox cells) and Pfactor (H19:H21)",
+ "about": "Management practices that reduce the erosivity of water moving across slopes will reduce soil erosion. Silt fences, detention ponds, and grassed waterways are all examples of erosion control practices used to establish the P factor. Construction engineers and constractors need to consider use of practices on site because their disruptive activies (which are usally accompanied by bare ground) result in the greatest erosion for urban sites.",
+ "theory": "Conservation practices can reduce soil erosion. The conservation practice factor (P) is the ratio of erosion with use of a practice to the soil loss when no practices are used. Beneficial practices can be used both during construction and in the final design to reduce soil erosion. Practices used during construction include silt fences and other sediment barriers, sediment detention basins, and traffic control such as gravel access paths. Erosion control on a finished product includes terrace landscaping and detention ponds/wetlands. If no conservation practice is selected, then the P factor = 1. Practices such as mulching that prevent erosion in the detachment stage reduce the P value by a half. Practices that keep sediment onsite (reduce transport or promote deposition) are also beneficial. Each additional practice will decrease erosion.",
+ "equation": "P = detachment factor(number of practices) * deposition factor(number of practices)",
+ "excelFormula": {
+  "detachment": "=IF(Practices!C103>2,0.125,IF(Practices!C103=2,0.25,IF(Practices!C103=1,0.5,1)))",
+  "deposition": "=IF(Practices!C111>2,0.42,IF(Practices!C111=2,0.56,IF(Practices!C111=1,0.75,1)))"
+ },
+ "detachment": {
+  "label": "Detachment control",
+  "help": "Practices that keep soil from being loosened by rain and runoff.",
+  "factors": [
+   1,
+   0.5,
+   0.25,
+   0.125
+  ],
+  "groups": [
+   {
+    "key": "during",
+    "label": "During construction",
+    "practices": [
+     {
+      "id": 1,
+      "label": "Temporary Seeding"
+     },
+     {
+      "id": 2,
+      "label": "Traffic (Access) Path"
+     },
+     {
+      "id": 3,
+      "label": "Construction Scheduling"
+     },
+     {
+      "id": 4,
+      "label": "Grade Stabilization"
+     },
+     {
+      "id": 5,
+      "label": "Brush Barrier"
+     },
+     {
+      "id": 6,
+      "label": "Educational Programs"
+     }
+    ]
+   },
+   {
+    "key": "final",
+    "label": "Final site design",
+    "practices": [
+     {
+      "id": 7,
+      "label": "Mulching"
+     },
+     {
+      "id": 8,
+      "label": "Sodding"
+     },
+     {
+      "id": 9,
+      "label": "Revetments"
+     },
+     {
+      "id": 10,
+      "label": "Green Roofs"
+     },
+     {
+      "id": 11,
+      "label": "Rain Gardens"
+     },
+     {
+      "id": 12,
+      "label": "Native Revegetation"
+     }
+    ]
+   }
+  ]
+ },
+ "deposition": {
+  "label": "Deposition control",
+  "help": "Practices that slow runoff and keep sediment on the site.",
+  "factors": [
+   1,
+   0.75,
+   0.56,
+   0.42
+  ],
+  "groups": [
+   {
+    "key": "during",
+    "label": "During construction",
+    "practices": [
+     {
+      "id": 1,
+      "label": "Silt Fences"
+     },
+     {
+      "id": 2,
+      "label": "Detention Basins"
+     },
+     {
+      "id": 3,
+      "label": "Storm Drain Protection"
+     },
+     {
+      "id": 4,
+      "label": "Water Dispersion Structure"
+     },
+     {
+      "id": 5,
+      "label": "Water Diversion Channel"
+     },
+     {
+      "id": 6,
+      "label": "Perimeter Infiltration System"
+     }
+    ]
+   },
+   {
+    "key": "final",
+    "label": "Final site design",
+    "practices": [
+     {
+      "id": 7,
+      "label": "Drop Terracing / Water Bars"
+     },
+     {
+      "id": 8,
+      "label": "Parking Lot Storage"
+     },
+     {
+      "id": 9,
+      "label": "Detention Ponds or Wetlands"
+     },
+     {
+      "id": 10,
+      "label": "Grassed Diversion Channel"
+     },
+     {
+      "id": 11,
+      "label": "Sand Infiltration Filters"
+     },
+     {
+      "id": 12,
+      "label": "Check Dams"
+     }
+    ]
+   }
+  ]
+ },
+ "notes": [
+  "P depends only on how many practices are checked in each group: detachment \u00d70.5 per practice, deposition \u00d70.75 per practice, with no extra credit past three. The formulas use 0.125 for three or more detachment practices (the table on the P sheet shows 0.13).",
+  "Practice names follow the workbook's Practices sheet. In Excel the clickable checkboxes have slightly different captions, the \"Traffic (access) path\" box appears twice, and the \"Detention ponds or wetlands\" box is not linked to a cell, so ticking it does not change P. Here every listed practice counts.",
+  "\"Educational programs\" was listed under both detachment groups; it appears once here. The blank label next to one deposition checkbox is filled with that checkbox's caption, \"Drop terracing / water bars\"."
+ ],
+ "defaults": {
+  "detachment": [],
+  "deposition": [
+   1,
+   2,
+   9
+  ]
+ }
+}

@@ -1,0 +1,297 @@
+{
+ "source": "USLE_Agriculture_KS08.xlsm (S. J. Thien, Kansas State University), sheet Practices (I102:L107, E111:I116), formulas Pfactor!H19:H22; NRCS Iowa FOTG Section I, USLE Erosion Prediction (Sept 2002), Tables IIIa-IIId",
+ "sourceUrl": "https://efotg.sc.egov.usda.gov/references/public/IA/Universal_Soil_Loss_Equation1.pdf",
+ "about": "Management practices that reduce the erosivity of water moving across slopes will reduce soil erosion. Contouring, strip-cropping, terraces, and grassed waterways are all examples of erosion control practices used to establish the P factor. Contouring is tilling and planting across the slope rather than with it. Strip-cropping uses alternate bands of cover and row crops across the slope. Terraces are soil embankments that reshape slopes into a series of short slopes that slow water flow and reduce its erosivity. Terraces that open to grassed waterways further limit erosion.",
+ "equation": "P = Ppractice * Pterrace. Ppractice = contour P x subfactor (strip-cropping, buffer strips), adjusted when slope length exceeds the NRCS limit.",
+ "practices": [
+  {
+   "id": 1,
+   "key": "contour",
+   "label": "Contouring"
+  },
+  {
+   "id": 2,
+   "key": "strip",
+   "label": "Strip-cropping"
+  },
+  {
+   "id": 4,
+   "key": "buffer",
+   "label": "Contour buffer strips"
+  },
+  {
+   "id": 3,
+   "key": "none",
+   "label": "No practice"
+  }
+ ],
+ "terraces": [
+  {
+   "id": 1,
+   "key": "closed",
+   "label": "Terraces, closed outlets"
+  },
+  {
+   "id": 2,
+   "key": "open",
+   "label": "Terraces, open outlets"
+  },
+  {
+   "id": 3,
+   "key": "none",
+   "label": "No terraces"
+  }
+ ],
+ "slopeClasses": [
+  {
+   "id": 1,
+   "label": "<2.5 %",
+   "maxSlope": 2.5,
+   "contour": 0.6,
+   "strip": 0.3
+  },
+  {
+   "id": 2,
+   "label": "2.5-8.4 %",
+   "maxSlope": 8.4,
+   "contour": 0.5,
+   "strip": 0.25
+  },
+  {
+   "id": 3,
+   "label": "8.5-12.4 %",
+   "maxSlope": 12.4,
+   "contour": 0.6,
+   "strip": 0.3
+  },
+  {
+   "id": 4,
+   "label": "12.5-16.4 %",
+   "maxSlope": 16.4,
+   "contour": 0.7,
+   "strip": 0.35
+  },
+  {
+   "id": 5,
+   "label": "16.5-20.4 %",
+   "maxSlope": 20.4,
+   "contour": 0.8,
+   "strip": 0.4
+  },
+  {
+   "id": 6,
+   "label": "20.5-25 %",
+   "maxSlope": null,
+   "contour": 0.9,
+   "strip": 0.45
+  }
+ ],
+ "terraceIntervals": [
+  {
+   "id": 1,
+   "label": "<110 ft (33 m)",
+   "closed": 0.5,
+   "open": 0.7,
+   "openByGrade": {
+    "low": 0.6,
+    "mid": 0.7,
+    "high": 1.0
+   }
+  },
+  {
+   "id": 2,
+   "label": "110-140 ft (33-43 m)",
+   "closed": 0.6,
+   "open": 0.8,
+   "openByGrade": {
+    "low": 0.7,
+    "mid": 0.8,
+    "high": 1.0
+   }
+  },
+  {
+   "id": 3,
+   "label": "140-180 ft (43-55 m)",
+   "closed": 0.7,
+   "open": 0.9,
+   "openByGrade": {
+    "low": 0.8,
+    "mid": 0.9,
+    "high": 1.0
+   }
+  },
+  {
+   "id": 4,
+   "label": "180-225 ft (55-68 m)",
+   "closed": 0.8,
+   "open": 0.9,
+   "openByGrade": {
+    "low": 0.8,
+    "mid": 0.9,
+    "high": 1.0
+   }
+  },
+  {
+   "id": 5,
+   "label": "225-300 ft (69-91 m)",
+   "closed": 0.9,
+   "open": 1.0,
+   "openByGrade": {
+    "low": 0.9,
+    "mid": 1.0,
+    "high": 1.0
+   }
+  },
+  {
+   "id": 6,
+   "label": ">300 ft (>91 m)",
+   "closed": 1.0,
+   "open": 1.0,
+   "openByGrade": {
+    "low": 1.0,
+    "mid": 1.0,
+    "high": 1.0
+   }
+  }
+ ],
+ "stripMeadow": {
+  "source": "NRCS Iowa FOTG Section I, USLE Erosion Prediction (Sept 2002), Table IIIc",
+  "label": "Meadow in the rotation",
+  "options": [
+   {
+    "pct": 50,
+    "factor": 0.5
+   },
+   {
+    "pct": 33,
+    "factor": 0.67
+   },
+   {
+    "pct": 25,
+    "factor": 0.75
+   },
+   {
+    "pct": 0,
+    "factor": 1.0
+   }
+  ],
+  "default": 50
+ },
+ "bufferStrips": {
+  "source": "NRCS Iowa FOTG Section I, USLE Erosion Prediction (Sept 2002), Table IIIb",
+  "label": "Share of slope in grass buffers",
+  "options": [
+   {
+    "pct": 10,
+    "factor": 0.9
+   },
+   {
+    "pct": 20,
+    "factor": 0.8
+   },
+   {
+    "pct": 30,
+    "factor": 0.7
+   },
+   {
+    "pct": 40,
+    "factor": 0.6
+   },
+   {
+    "pct": 50,
+    "factor": 0.5
+   }
+  ],
+  "default": 20
+ },
+ "channelGrades": {
+  "source": "NRCS Iowa FOTG Section I, USLE Erosion Prediction (Sept 2002), Table IIId",
+  "options": [
+   {
+    "key": "low",
+    "label": "0.1-0.3%"
+   },
+   {
+    "key": "mid",
+    "label": "0.4-0.7%"
+   },
+   {
+    "key": "high",
+    "label": "0.8% or more"
+   }
+  ],
+  "default": "mid"
+ },
+ "slopeLengthLimits": {
+  "source": "NRCS Iowa FOTG Section I, USLE Erosion Prediction (Sept 2002), Table IIIa",
+  "classes": [
+   {
+    "label": "1-2%",
+    "maxSlope": 2.5,
+    "contourFt": 400,
+    "stripWidthFt": 130,
+    "totalFt": 800
+   },
+   {
+    "label": "3-5%",
+    "maxSlope": 5.5,
+    "contourFt": 300,
+    "stripWidthFt": 100,
+    "totalFt": 600
+   },
+   {
+    "label": "6-8%",
+    "maxSlope": 8.5,
+    "contourFt": 200,
+    "stripWidthFt": 100,
+    "totalFt": 400
+   },
+   {
+    "label": "9-12%",
+    "maxSlope": 12.5,
+    "contourFt": 120,
+    "stripWidthFt": 80,
+    "totalFt": 240
+   },
+   {
+    "label": "13-16%",
+    "maxSlope": 16.5,
+    "contourFt": 80,
+    "stripWidthFt": 80,
+    "totalFt": 160
+   },
+   {
+    "label": "17-20%",
+    "maxSlope": 20.5,
+    "contourFt": 60,
+    "stripWidthFt": 60,
+    "totalFt": 120
+   },
+   {
+    "label": "21-25%",
+    "maxSlope": null,
+    "contourFt": 50,
+    "stripWidthFt": 50,
+    "totalFt": 100
+   }
+  ],
+  "residueBonus": {
+   "minCoverPct": 50,
+   "factor": 1.25
+  },
+  "adjustment": "Adjusted P = (allowable length x P + (slope length - allowable length) x 1) / slope length"
+ },
+ "notes": [
+  "Strip-cropping P = contour P x NRCS Table IIIc subfactor for meadow in the rotation. With 50% meadow this equals the workbook's strip-crop values exactly.",
+  "Contour buffer strips P = contour P x NRCS Table IIIb subfactor for the share of the slope in grass.",
+  "When slope length exceeds the NRCS Table IIIa limit (contouring; total slope for strip-cropping and buffer strips), P is adjusted toward 1 for the length beyond the limit. Limits are 25% longer with at least 50% residue cover after planting. The workbook did not apply limits; they can be turned off on the page.",
+  "Terrace factors match NRCS Table IIId: closed outlets (also underground outlets and level terraces with open outlets) exactly, and open outlets by channel grade measured on the 300 ft (or one-third of the terrace) nearest the outlet. The workbook's open values equal the 0.4-0.7% grade column.",
+  "Terrace interval classes are labeled 225-300 ft and >300 ft as in NRCS Table IIId (the workbook said 225-330 ft). NRCS Iowa starts the second class at 100 ft; the workbook uses 110 ft.",
+  "With terraces, AH 537 uses the terrace interval as the slope length; enter it in step 3. The workbook applies the terrace factor whether or not a contour practice is selected."
+ ],
+ "defaults": {
+  "practice": 2,
+  "terrace": 2,
+  "interval": 5
+ }
+}

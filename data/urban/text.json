@@ -1,0 +1,58 @@
+{
+ "source": "USLE_Urban_KS08.xlsm (S. J. Thien and M. Buckley, Kansas State University), sheets Intro, C Hints, P Hints, Theory (obvious typos corrected)",
+ "intro": "The Universal Soil Loss Equation predicts soil loss from sheet and rill types of water erosion based on site characteristics and management inputs. The USLE predicts if erosion will exceed a \"tolerable\" rate. Conservation hints and explanations of equation factors help users understand soil erosion processes and their control. The USLE can alert soil managers to potential erosion hazards, identify factors responsible for excessive erosion, and aid in selecting of appropriate conservation practices. Each factor affecting erosion can be changed individually to illustrate its impact. This USLE version is applicable for Kansas. Note: Factors other than those considered in this equation can affect actual erosion loss.",
+ "tFactor": "Though preferred, zero tolerance for erosion is probably not practical, so soil-loss tolerance limits, known as T values, have been assigned to soils. USDA and other soil scientists have developed T values from years of experience and some research on how soil productivity is degraded by erosion. Soil profiles are constantly developing, so the tolerable value is closely related to the soils ability to recover lost soil. T values commonly range from 2-5 tons of soil loss per acre per year. When soil quality is sensitive to small erosion losses, low T values have been assigned. Examples include soils in dry regions, or that are shallow to bedrock - in general those whose forming factors favor slow development. For deep soils with favorable rooting zones, 5 tons/acre is the maximum T value assigned. Use of a tolerable erosion concept in the USLE should not suggest that soil productivity is reduced only when erosion exceeds the tolerable level. Any soil loss can lead to a change in soil quality. Data indicate that about one-third of all cropland in the United States is eroding at rates in excess of T. Erosion from construction sites can be up to 4 times as severe as cropland, luckily exposure is often for shorter periods of time. Attention to soil conservation remains essential in preserving soil quality.",
+ "cHints": [
+  {
+   "text": "Best suggestion: Increase the amount of ground cover.",
+   "items": [
+    "Use native vegetation, temporary seeding, or a cover crop.",
+    "Protect surface with gravel, mulch, etc."
+   ]
+  },
+  {
+   "text": "Reduce the Disturbance. Excepting compaction, C values decrease as you move down this list and use smaller equipment, disrupting the soil surface less.",
+   "items": [
+    "Excavation",
+    "Land Shaping",
+    "Soil Compacting",
+    "Tractor Seeding",
+    "Light Traffic",
+    "Landscaping"
+   ]
+  }
+ ],
+ "pHints": [
+  {
+   "text": "Consider timing of project in relation to season.",
+   "items": []
+  },
+  {
+   "text": "Use practices that reduce exposed soil.",
+   "items": [
+    "Critical Area Seeding",
+    "Temporary Seeding",
+    "Concrete Grids",
+    "Bedding, Mulching, Netting"
+   ]
+  },
+  {
+   "text": "Use practices that slow water runoff",
+   "items": [
+    "Green Roofs",
+    "Rain Gardens",
+    "Silt Fences, Straw Bale Barrier, etc.",
+    "Terraces, Revetments, Swales, or Water Bars"
+   ]
+  },
+  {
+   "text": "Utilize detention basins and ponds to keep water and sediment on-site.",
+   "items": []
+  },
+  {
+   "text": "Utilize buffer strips and parking lot perimeters keep water and sediment on-site.",
+   "items": []
+  }
+ ],
+ "credit": "Steve. J. Thien and Meghan Buckley, Kansas State University (sjthien@ksu.edu)"
+}
