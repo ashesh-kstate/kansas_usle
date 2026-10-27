@@ -1,5 +1,5 @@
 {
- "source": "USLE_Agriculture_KS08.xlsm (S. J. Thien, Kansas State University), sheet LSfactor; NRCS Iowa FOTG Section I, USLE Erosion Prediction (Sept 2002), Table II",
+ "source": "LS-factor in the USLE Erosion Prediction Calculator. Developed by A.Y. Sheshukov using Section I of the NRCS Field Office Technical Guide and the Excel spreadsheet tool by S.J. Thien (Kansas State University).",
  "about": "The effect of slope length and steepness on water erosion appears in the LS, or topography, factor. Erosion increases when either the length of the slope increases, the steepness of the slope increases, or both.",
  "method": "nrcs",
  "methods": {

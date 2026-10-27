@@ -2,7 +2,7 @@
  * USLE model: A = R * K * LS * C * P
  * Pure calculation code with no page code, so a RUSLE model can sit beside it
  * later and share the same inputs. Lookup tables come from data/*.json
- * (built by tools/extract_workbook.py from USLE_Agriculture_KS08.xlsm and the
+ * (built by tools/extract_workbook.py from spreadsheet calculator and the
  * general tables of the NRCS Iowa FOTG USLE section, 2002).
  *
  * Works in the browser (window.USLE) and in Node (require / import).

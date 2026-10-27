@@ -1,5 +1,5 @@
 {
- "source": "USLE_Agriculture_KS08.xlsm (S. J. Thien, Kansas State University), sheet Practices (I102:L107, E111:I116), formulas Pfactor!H19:H22; NRCS Iowa FOTG Section I, USLE Erosion Prediction (Sept 2002), Tables IIIa-IIId",
+ "source": "P-factor in the USLE Erosion Prediction Calculator. Developed by A.Y. Sheshukov using Section I of the NRCS Field Office Technical Guide and the Excel spreadsheet tool by S.J. Thien (Kansas State University).",
  "sourceUrl": "https://efotg.sc.egov.usda.gov/references/public/IA/Universal_Soil_Loss_Equation1.pdf",
  "about": "Management practices that reduce the erosivity of water moving across slopes will reduce soil erosion. Contouring, strip-cropping, terraces, and grassed waterways are all examples of erosion control practices used to establish the P factor. Contouring is tilling and planting across the slope rather than with it. Strip-cropping uses alternate bands of cover and row crops across the slope. Terraces are soil embankments that reshape slopes into a series of short slopes that slow water flow and reduce its erosivity. Terraces that open to grassed waterways further limit erosion.",
  "equation": "P = Ppractice * Pterrace. Ppractice = contour P x subfactor (strip-cropping, buffer strips), adjusted when slope length exceeds the NRCS limit.",

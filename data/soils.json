@@ -1,5 +1,5 @@
 {
- "source": "USLE_Agriculture_KS08.xlsm (S. J. Thien, Kansas State University), sheet Kfactor, range A81:D405",
+ "source": "K-factor in the USLE Erosion Prediction Calculator. Developed by A.Y. Sheshukov using Section I of the NRCS Field Office Technical Guide and the Excel spreadsheet tool by S.J. Thien (Kansas State University).",
  "about": "The soil erodibility factor, K, indicates the inherent susceptibility of a soil to erode. Two soil properties, infiltration capacity and structural stability, exert the greatest influence on erosion. These features, in turn, are related to a soil's organic matter and clay content, clay type, depth to an impervious layer, and tendency to crust. Selecting one of the 324 soils in Kansas. assigns both a K factor and a T value. Soils that readily resist erosion have K values less than 0.2, while values greater than 0.3 indicate high erodibility.",
  "units": {
   "K": "ton\u00b7acre\u00b7h / (hundreds of acre\u00b7ft\u00b7tonf\u00b7in)",

@@ -1,7 +1,7 @@
 /*
  * USLE model for urban and construction sites: A = R * K * LS * C * P
  * R, K, LS come from the shared core in usle-model.js. C and P follow
- * USLE_Urban_KS08.xlsm (data/urban/*.json, built by tools/extract_urban.py):
+ * spreadsheet calculator (data/urban/*.json, built by tools/extract_urban.py):
  *   C = ground-cover C (cover type, % cover) * site-disturbance multiplier
  *   P = detachment factor (number of practices) * deposition factor (number of practices)
  *
